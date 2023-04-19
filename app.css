@@ -123,10 +123,6 @@ nav {
   height: 56px;
   background-color: var(--colors-backgroundAlt);
   border-bottom: 1px solid var(--colors-light-cardBorder);
-<<<<<<< HEAD
-  transform: translate3d(0px, 0px);
-=======
->>>>>>> development
   padding-left: 16px;
   padding-right: 16px;
 }
