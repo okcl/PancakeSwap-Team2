@@ -902,6 +902,10 @@
             flex-direction: column-reverse;
             gap: 0.5rem;
 
+            .animated-imgs-wrapper {
+                margin-right: 0.8rem;
+            }
+
             .main-content {
                 max-width: fit-content;
                 margin-left: 2rem;
