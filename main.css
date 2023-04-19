@@ -1381,7 +1381,7 @@ nav a {
   background: var(--colors-gradientCardHeader);
 }
 #part-4 .part-4-wrapper {
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   display: flex;
   max-width: 968px;
   flex-direction: row-reverse;
@@ -1390,13 +1390,13 @@ nav a {
   align-items: center;
   gap: 4rem;
 }
-#part-4 .animation-imgs-wrapper .animated-img:first-of-type {
+#part-4 .animated-imgs-wrapper .animated-img:first-of-type {
   animation: 3s ease-in-out 1s infinite normal none running animation-coins-3;
 }
-#part-4 .animation-imgs-wrapper .animated-img:nth-of-type(2) {
+#part-4 .animated-imgs-wrapper .animated-img:nth-of-type(2) {
   animation: 3s ease-in-out 0.66s infinite normal none running animation-coins-2;
 }
-#part-4 .animation-imgs-wrapper .animated-img:last-of-type {
+#part-4 .animated-imgs-wrapper .animated-img:last-of-type {
   animation: 3s ease-in-out 0.33s infinite normal none running animation-coins-1;
 }
 #part-4 .main-content {
@@ -1452,11 +1452,11 @@ nav a {
     gap: 0.5rem;
   }
   #part-4 .part-4-wrapper .animated-imgs-wrapper {
-    margin-right: 0.8rem;
+    margin-right: 1rem;
   }
   #part-4 .part-4-wrapper .main-content {
     max-width: fit-content;
-    margin-left: 2rem;
+    margin-left: 1rem;
     align-self: flex-start;
   }
   #part-4 .part-4-wrapper .main-content h2 {

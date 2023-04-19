@@ -2,7 +2,7 @@
     background: var(--colors-gradientCardHeader);
 
     .part-4-wrapper {
-        padding: 3rem 0;
+        padding: 3rem 2rem;
         display: flex;
         max-width: 968px;
         flex-direction: row-reverse;
@@ -12,7 +12,7 @@
         gap: 4rem;
     }
 
-    .animation-imgs-wrapper {
+    .animated-imgs-wrapper {
 
         .animated-img {
 
@@ -90,12 +90,12 @@
             gap: 0.5rem;
 
             .animated-imgs-wrapper {
-                margin-right: 0.8rem;
+                margin-right: 0.5rem;
             }
 
             .main-content {
                 max-width: fit-content;
-                margin-left: 2rem;
+                margin-left: 1rem;
                 align-self: flex-start;
 
                 h2 {
