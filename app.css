@@ -270,6 +270,11 @@ nav a {
   display: block;
   margin-right: 12px;
 }
+@media screen and (max-width: 576px) {
+  .nav-currentprice {
+    display: none;
+  }
+}
 
 .nav-currentprice a {
   display: flex;
@@ -499,6 +504,11 @@ nav a {
   position: absolute;
   bottom: 0;
   transform: translate(-10px, 196px);
+}
+@media screen and (max-width: 576px) {
+  .network-select-content {
+    transform: translate(-110px, 196px);
+  }
 }
 
 .network-select-text {
