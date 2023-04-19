@@ -1841,13 +1841,17 @@ footer {
   background-color: #27262c;
 }
 
+footer .footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: min(1200px, 90vw);
+}
+
 /* Part 9 */
 #links-footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: min(1200px, 90vw);
-  max-width: 1200px;
+  margin-bottom: 1.5rem;
 }
 
 footer .mobile {
