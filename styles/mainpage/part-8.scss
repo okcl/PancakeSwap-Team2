@@ -1,0 +1,99 @@
+#part-8 {
+    color: var(--colors-white);
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+    .main-content-wrapper {
+        padding: 0 1.5rem;
+        width: 100%;
+        background-image: url(./public/svgexport-35.svg);
+        background-position: center;
+
+        .main-content {
+            padding: 3rem 0;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 1200px;
+
+            .animated-imgs-wrapper {
+                order: 0;
+                max-width: 256px;
+                max-height: 256px;
+                position: absolute;
+    
+                &:first-of-type {
+                    top: 0;
+                    left: 0;
+                }
+    
+                &:last-of-type {
+                    bottom: 0;
+                    right: 0;
+                }
+        
+                .animated-imgs, .animated-img {
+                    max-width: inherit;
+                    max-height: inherit;
+                }
+            }
+        
+            .main-text {
+                padding: 3rem 0;
+                max-width: 968px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                h2 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1.25rem;
+                }
+
+                p:last-of-type {
+                    margin-bottom: 1.25rem;
+                }
+
+                a {
+                    color: var(--colors-primary);
+                    text-decoration: none;
+                    font-weight: 600;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.25rem;
+                    margin-bottom: 1.25rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                button {
+                    background-color: var(--colors-primary);
+                    color: var(--colors-white);
+                    border: 0;
+                    border-radius: 16px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding: 0.8rem 1.5rem;;
+                    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+
+                    &:hover {
+                        opacity: 0.65;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #part-8 {
+        .animated-imgs-wrapper {
+            display: none;
+        }
+    }
+}

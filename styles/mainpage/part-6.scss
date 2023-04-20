@@ -1,0 +1,117 @@
+#part-6 {
+    background: -webkit-linear-gradient(top,#6fb6f1 0%,#eaf2f6 100%);
+    background: -moz-linear-gradient(top,#6fb6f1 0%,#eaf2f6 100%);
+    background: -o-linear-gradient(top,#6fb6f1 0%,#eaf2f6 100%);
+    background: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
+    overflow: hidden;
+    
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    padding: 48px 0px;
+    display: flex;
+    .main-part-6 {
+        .background-images-part-6 {
+            .lower-corner-container{
+                .lower-corner {
+                    div:nth-child(1) {
+                        position: absolute;
+                        left: 0px;
+                        bottom: -64px;
+                        height: 512px;
+                        display: block;
+                        .card-cake {
+                            max-height: 100%;
+                            max-width: 100%;
+                            height: auto;
+                            width: auto;
+                            
+                        }
+                    }
+                    div:nth-child(2) {
+                        position: absolute;
+                        left: 0px;
+                        bottom: -64px;
+                        height: 512px;
+                        display: block;        
+                        .card-green-arrow {
+                            max-height: 100%;
+                            max-width: 100%;
+                            height: auto;
+                            width: auto;
+                        }
+
+                    }
+                    div:nth-child(3) {
+                        position: absolute;
+                        left: 0px;
+                        bottom: -64px;
+                        height: 512px;
+                        display: block;                         
+                        .card-pink-arrow {
+                            max-height: 100%;
+                            max-width: 100%;
+                            height: auto;
+                            width: auto;
+                        }
+
+                    }
+                    div:nth-child(4) {
+                        position: absolute;
+                        left: 0px;
+                        bottom: -64px;
+                        height: 512px;
+                        display: block;                        
+                        .card-cake-2 {
+                            max-height: 100%;
+                            max-width: 100%;
+                            height: auto;
+                            width: auto;
+                        }
+
+                    }
+                }
+            }
+            .upper-corner {
+                position: absolute;
+                right: 0px;
+                top: -64px;
+                height: 512px;
+                display: block;
+                .ball-2 {
+                    max-height: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    width: auto;
+                }
+                .ball-4 {
+                    max-height: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    width: auto;
+                }
+                .ball-6 {
+                    max-height: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    width: auto;
+                }
+                .ball-7 {
+                    max-height: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    width: auto;
+                }
+                .ball-9 {
+                    max-height: 100%;
+                    max-width: 100%;
+                    height: auto;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

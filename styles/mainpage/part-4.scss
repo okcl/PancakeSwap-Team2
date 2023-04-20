@@ -1,0 +1,107 @@
+#part-4 {
+    background: var(--colors-gradientCardHeader);
+
+    .part-4-wrapper {
+        padding: 3rem 2rem;
+        display: flex;
+        max-width: 968px;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .animated-imgs-wrapper {
+
+        .animated-img {
+
+            &:first-of-type {
+                animation: 3s ease-in-out 1s infinite normal none running animation-coins-3;
+            }
+            &:nth-of-type(2) {
+                animation: 3s ease-in-out 0.66s infinite normal none running animation-coins-2;
+            }
+            &:last-of-type {
+                animation: 3s ease-in-out 0.33s infinite normal none running animation-coins-1;
+            }
+        }
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+        max-width: 40ch;
+        h2 {
+            font-size: 2.5rem;
+            line-height: 1.1;
+            color: var(--colors-text);
+
+            strong {
+                color: var(--colors-secondary);
+            }
+        }
+        p {
+            color: var(--colors-textSubtle);
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .links {
+            a {
+                text-decoration: none;
+                font-weight: 600;
+
+                &:first-of-type {
+                    background-color: var(--colors-primary);
+                    color: var(--colors-invertedContrast);
+                    border-radius: 16px;
+                    margin-top: 2.3rem;
+                    margin-right: 1rem;
+                    padding: 0.8rem 1.5rem;
+                    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+
+                    &:hover {
+                        opacity: 0.65;
+                    }
+                }
+                &:last-of-type {
+                    color: var(--colors-primary);
+                    gap: 0.25rem;
+                    display: inline-flex;
+                    align-items: center;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 852px) {
+    #part-4 {
+        .part-4-wrapper {
+            flex-direction: column-reverse;
+            gap: 0.5rem;
+
+            .animated-imgs-wrapper {
+                margin-right: 0.5rem;
+            }
+
+            .main-content {
+                max-width: fit-content;
+                margin-left: 1rem;
+                align-self: flex-start;
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
