@@ -10,106 +10,276 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    z-index: -2;
 
     padding: 48px 0px;
     display: flex;
     .main-part-6 {
         .background-images-part-6 {
-            .lower-corner-container{
-                .lower-corner {
-                    div:nth-child(1) {
-                        position: absolute;
-                        left: 0px;
-                        bottom: -64px;
-                        height: 512px;
-                        display: block;
-                        .card-cake {
-                            max-height: 100%;
-                            max-width: 100%;
-                            height: auto;
-                            width: auto;
-                            
-                        }
+            .lower-corner {
+                
+                div {
+                    z-index: -1;
+                    position: absolute;
+                    left: 0px;
+                    bottom: -64px;
+                    height: 512px;
+                    display: block;
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                        height: auto;
+                        width: auto;
                     }
-                    div:nth-child(2) {
-                        position: absolute;
-                        left: 0px;
-                        bottom: -64px;
-                        height: 512px;
-                        display: block;        
-                        .card-green-arrow {
-                            max-height: 100%;
-                            max-width: 100%;
-                            height: auto;
-                            width: auto;
-                        }
-
-                    }
-                    div:nth-child(3) {
-                        position: absolute;
-                        left: 0px;
-                        bottom: -64px;
-                        height: 512px;
-                        display: block;                         
-                        .card-pink-arrow {
-                            max-height: 100%;
-                            max-width: 100%;
-                            height: auto;
-                            width: auto;
-                        }
-
-                    }
-                    div:nth-child(4) {
-                        position: absolute;
-                        left: 0px;
-                        bottom: -64px;
-                        height: 512px;
-                        display: block;                        
-                        .card-cake-2 {
-                            max-height: 100%;
-                            max-width: 100%;
-                            height: auto;
-                            width: auto;
-                        }
-
+                }
+                
+            }
+            .upper-corner {
+                
+                div {
+                    z-index: -1;
+                    position: absolute;
+                    right: 0px;
+                    top: -64px;
+                    height: 512px;
+                    display: block;
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                        height: auto;
+                        width: auto;
                     }
                 }
             }
-            .upper-corner {
-                position: absolute;
-                right: 0px;
-                top: -64px;
-                height: 512px;
-                display: block;
-                .ball-2 {
-                    max-height: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    width: auto;
+            .part-6-banner {
+                background: rgba(255, 255, 255, 0.6);
+                padding: 16px;
+                border: 1px solid var(--colors-cardBorder);
+                box-sizing: border-box;
+                backdrop-filter: blur(12px);
+                border-radius: 72px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                margin: 0px;
+                
+                width: 968px;
+                margin-top: 48px;
+                margin-bottom: 48px;
+                h2 {
+                    font-size: 40px;
+                    color: var(--colors-text);
+                    margin-bottom: 24px;
+                    text-align: center;
+                    span {
+                        color: var(--colors-secondary);
+                        font-weight: 600;
+                        line-height: 1.1;
+                        font-size: 100%;
+                    }
                 }
-                .ball-4 {
-                    max-height: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    width: auto;
+                div:nth-child(2) {
+                    color: var(--colors-textSubtle);
+                    font-weight: 400;
+                    line-height: 1.5;
+                    font-size: 16px;
                 }
-                .ball-6 {
-                    max-height: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    width: auto;
+                div:nth-child(3) {
+                    color: var(--colors-textSubtle);
+                    font-weight: 400;
+                    line-height: 1.5;
+                    margin-bottom: 40px;
+                    font-size: 16px;
+                
                 }
-                .ball-7 {
-                    max-height: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    width: auto;
-                }
-                .ball-9 {
-                    max-height: 100%;
-                    max-width: 100%;
-                    height: auto;
-                    width: auto;
+                div:nth-child(4) {
+                    display: flex;
+                    flex-direction: row;
+                    width: 600px;
+                    margin: 0px auto;
+                    
+                    .card-left-container {
+                        display: flex;
+                        flex: 1;
+                        margin-right: 24px;
+                        margin-bottom: 0px;
+                        max-width: 100%;
+                        .card-left-shadow {
+                            transform: rotate(-2.36deg);
+                            background: rgb(255, 178, 55);
+                            border-radius: var(--radii-card);
+                            color: var(--colors-text);
+                            overflow: hidden;
+                            position: relative;
+                            height: fit-content;
+                            padding: 1px 1px 4px;
+                            box-sizing: border-box;
+                            .card-left {
+                                // width: 100%;
+                                // height: 100%;
+                                // overflow: initial;
+                                background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+                                border-radius: var(--radii-card);
+                                padding: 24px;
+                                .svg-card-left {
+                                    transform: rotate(-2.36deg);
+                                    position: absolute;
+                                    top: 24px;
+                                    right: 24px
+                                }
+                                .card-left-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-top: 48px;
+                                    div:nth-child(1) {
+                                        color: rgb(40, 13, 95);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        font-size: 16px;
+                                    }
+                                    
+                                    h2 {
+                                        font-size: 40px;
+                                        font-weight: 600;
+                                        line-height: 1.1;
+                                        margin-top: 8px;
+                                        margin-bottom: 8px
+                                    }
+                                    div:nth-child(3) {
+                                        color: rgb(40, 13, 95);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        margin-bottom: 24px;
+                                        font-size: 16px;
+                                    }
+                                    div:nth-child(4) {
+                                        color: rgb(40, 13, 95);
+                                        font-weight: 400;
+                                        line-height: 1.5;
+                                        margin-bottom: 40px;
+                                        font-size: 16px;   
+                                    }
+                                }
+                                .card-left-button {
+                                    display: flex;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    -webkit-box-pack: center;
+                                    justify-content: center;
+                                    margin: 0;
+                                    a {
+                                        width: 100%;
+                                        color: inherit;
+                                        text-decoration: none;
+                                        button {
+                                            position: relative;
+                                            -webkit-box-align: center;
+                                            align-items: center;
+                                            border: 0px;
+                                            border-radius: 16px;
+                                            box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                                            cursor: pointer;
+                                            display: inline-flex;
+                                            font-family: inherit;
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            -webkit-box-pack: center;
+                                            justify-content: center;
+                                            letter-spacing: 0.03em;
+                                            line-height: 1;
+                                            opacity: 1;
+                                            outline: 0px;
+                                            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                            height: 48px;
+                                            padding: 0px 24px;
+                                            background-color: var(--colors-primary);
+                                            color: var(--colors-invertedContrast);
+                                            width: 100%;
+                                            div {
+                                                color: var(--colors-invertedContrast);
+                                                font-weight: 600;
+                                                line-height: 1.5;
+                                                font-size: 16px;
+                                            }
+                                            svg {
+                                                align-self: center;
+                                                fill: var(--colors-invertedContrast);
+                                                color: var(--colors-invertedContrast);
+                                                flex-shrink: 0;
+                                                margin-left: 4px
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .card-right-container {
+                        display: flex;
+                        flex: 1;
+                        max-width: 100%;
+
+                        ;
+                        
+                        .card-right-shadow {
+                            transform: rotate(1.43deg);
+                            height: fit-content;
+                            padding: 1px 1px 4px;
+                            box-sizing: border-box;
+                            background: rgb(60, 23, 134);
+                            border-radius: var(--radii-card);
+                            color: var(--colors-text);
+                            overflow: hidden;
+                            position: relative;
+                            
+                            .card-right {
+                                width: 100%;
+                                height: 100%;
+                                overflow: initial;
+                                background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+                                border-radius: var(--radii-card);
+                                padding: 24px;
+                                .svg-card-right {
+                                    transform: rotate(1.43deg);
+                                    position: absolute;
+                                    top: 24px;
+                                    right: 24px;
+                                    svg {
+                                        align-self: center;
+                                        fill: var(--colors-white);
+                                        color: var(--colors-white);
+                                        flex-shrink: 0;
+                                    }
+                                }
+                                .card-right-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-top: 48px;
+                                    div:nth-child(1){
+                                        color: var(--colors-white);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        font-size: 16px;
+                                    }
+                                    div:nth-child(2){
+                                        text-decoration: none;
+                                        color: var(--colors-text);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        font-size: 40px;
+                                        
+                                        span {
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
