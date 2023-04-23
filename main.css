@@ -109,6 +109,10 @@
   --colors-gradientVioletAlt: linear-gradient(180deg,#cbd7ef,#9a9fd0);
   --colors-gradientGold: linear-gradient(180deg,#ffd800,#fdab32);
   --colors-gradientBold: linear-gradient(#53dee9,#7645d9);
+  --radii-small: 4px;
+  --radii-default: 16px;
+  --radii-card: 24px;
+  --radii-circle: 50%;
 }
 
 /*Navbar*/
@@ -118,7 +122,9 @@
 
 nav {
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   width: 100%;
   height: 56px;
@@ -178,6 +184,7 @@ nav a {
 .link a {
   position: relative;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   color: #7a6eaa;
   font-size: 16px;
@@ -207,6 +214,7 @@ nav a {
 }
 
 .down-menu a {
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   background: transparent;
@@ -216,6 +224,7 @@ nav a {
   display: flex;
   font-size: 16px;
   height: 48px;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   outline: 0px;
   padding-left: 16px;
@@ -318,6 +327,7 @@ nav a {
   background: transparent;
   border: none;
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -325,6 +335,7 @@ nav a {
   display: inline-flex;
   font-family: inherit;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -350,7 +361,6 @@ nav a {
 
 .lang-down-menu {
   position: absolute;
-  width: -moz-max-content;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -372,6 +382,7 @@ nav a {
 
 .lang-down-menu button {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   cursor: pointer;
@@ -379,6 +390,7 @@ nav a {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -421,6 +433,7 @@ nav a {
   padding: 0px;
   width: 32px;
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -429,6 +442,7 @@ nav a {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -456,6 +470,7 @@ nav a {
 }
 
 .network-select-link {
+  -webkit-box-align: center;
   align-items: center;
   background-color: var(--colors-tertiary);
   border-radius: 16px;
@@ -525,6 +540,7 @@ nav a {
 }
 
 .network-select-content button {
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   background: transparent;
@@ -578,6 +594,7 @@ nav a {
 
 .nav-connect {
   position: relative;
+  -moz-box-align: center;
   align-items: center;
   border: 0px none;
   border-radius: 16px;
@@ -587,6 +604,7 @@ nav a {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -moz-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -683,6 +701,7 @@ nav a {
   padding: 4px 8px;
   margin-top: 10px;
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   cursor: pointer;
@@ -690,6 +709,7 @@ nav a {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -741,8 +761,8 @@ nav a {
 }
 .part-1 .part-1-container .swiper-container .swiper-body-2 .swiper-content-left a {
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
-  width: -moz-fit-content;
   width: fit-content;
   color: var(--colors-primary);
   font-weight: 600;
@@ -757,6 +777,7 @@ nav a {
 }
 .part-1 .part-1-container .swiper-container .swiper-body-2 .swiper-content-left a button {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -766,6 +787,7 @@ nav a {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -777,9 +799,7 @@ nav a {
   background-color: var(--colors-primary);
   color: var(--colors-invertedContrast);
   -webkit-font-smoothing: antialiased;
-  -webkit-appearance: auto;
-     -moz-appearance: auto;
-          appearance: auto;
+  appearance: auto;
   writing-mode: horizontal-tb !important;
   text-rendering: auto;
   margin: 0em;
@@ -814,7 +834,9 @@ nav a {
 .part-1 .part-1-container #homepage-hero {
   display: flex;
   flex-direction: row;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 .part-1 .part-1-container #homepage-hero #homepage-hero-left {
@@ -828,14 +850,10 @@ nav a {
   margin-bottom: 24px;
   font-family: Kanit, sans-serif;
   display: block;
-  -webkit-margin-before: 0.83em;
-          margin-block-start: 0.83em;
-  -webkit-margin-after: 0.83em;
-          margin-block-end: 0.83em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   margin-top: 0;
 }
 .part-1 .part-1-container #homepage-hero #homepage-hero-left .homepage-hero-left-text-2 {
@@ -852,6 +870,7 @@ nav a {
 }
 .part-1 .part-1-container #homepage-hero #homepage-hero-left .homepage-hero-buttons #connect-wallet-button {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -861,6 +880,7 @@ nav a {
   font-family: Kanit, sans-serif;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -878,6 +898,7 @@ nav a {
 }
 .part-1 .part-1-container #homepage-hero #homepage-hero-left .homepage-hero-buttons #trade-now-button {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border-radius: 16px;
   cursor: pointer;
@@ -885,6 +906,7 @@ nav a {
   font-family: Kanit, sans-serif;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -896,8 +918,7 @@ nav a {
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
-  -o-border-image: initial;
-     border-image: initial;
+  border-image: initial;
   border-color: var(--colors-primary);
   box-shadow: none;
   color: var(--colors-primary);
@@ -941,9 +962,15 @@ nav a {
   max-height: 100%;
   max-width: 100%;
   flex: 1;
+  -webkit-animation: fadeinout 4s linear forwards;
   animation: fadeinout 3s linear forwards;
   animation-iteration-count: infinite;
   opacity: 0;
+}
+@-webkit-keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
 }
 @keyframes fadeinout {
   50% {
@@ -959,9 +986,15 @@ nav a {
   max-height: 100%;
   max-width: 100%;
   flex: 1;
+  -webkit-animation: fadeinout 4s linear forwards;
   animation: fadeinout 4s linear forwards;
   animation-iteration-count: infinite;
   opacity: 0;
+}
+@-webkit-keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
 }
 @keyframes fadeinout {
   50% {
@@ -977,9 +1010,15 @@ nav a {
   max-height: 100%;
   max-width: 100%;
   flex: 1;
+  -webkit-animation: fadeinout 5s linear forwards;
   animation: fadeinout 5s linear forwards;
   animation-iteration-count: infinite;
   opacity: 0;
+}
+@-webkit-keyframes fadeinout {
+  50% {
+    opacity: 1;
+  }
 }
 @keyframes fadeinout {
   50% {
@@ -1424,7 +1463,6 @@ nav a {
     margin-right: 0.5rem;
   }
   #part-4 .part-4-wrapper .main-content {
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin-left: 1rem;
     align-self: flex-start;
@@ -1436,105 +1474,264 @@ nav a {
 /* Part 5 */
 /* Part 6 */
 #part-6 {
+  background: -webkit-linear-gradient(top, #6fb6f1 0%, #eaf2f6 100%);
+  background: -moz-linear-gradient(top, #6fb6f1 0%, #eaf2f6 100%);
+  background: -o-linear-gradient(top, #6fb6f1 0%, #eaf2f6 100%);
   background: linear-gradient(180deg, #6fb6f1 0%, #eaf2f6 100%);
   overflow: hidden;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  z-index: -2;
   padding: 48px 0px;
   display: flex;
 }
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(1) {
+#part-6 .main-part-6 .background-images-part-6 .lower-corner div {
+  z-index: -1;
   position: absolute;
   left: 0px;
   bottom: -64px;
   height: 512px;
   display: block;
 }
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(1) .card-cake {
+#part-6 .main-part-6 .background-images-part-6 .lower-corner div img {
   max-height: 100%;
   max-width: 100%;
   height: auto;
   width: auto;
 }
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(2) {
-  position: absolute;
-  left: 0px;
-  bottom: -64px;
-  height: 512px;
-  display: block;
-}
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(2) .card-green-arrow {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-}
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(3) {
-  position: absolute;
-  left: 0px;
-  bottom: -64px;
-  height: 512px;
-  display: block;
-}
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(3) .card-pink-arrow {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-}
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(4) {
-  position: absolute;
-  left: 0px;
-  bottom: -64px;
-  height: 512px;
-  display: block;
-}
-#part-6 .main-part-6 .background-images-part-6 .lower-corner-container .lower-corner div:nth-child(4) .card-cake-2 {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-}
-#part-6 .main-part-6 .background-images-part-6 .upper-corner {
+#part-6 .main-part-6 .background-images-part-6 .upper-corner div {
+  z-index: -1;
   position: absolute;
   right: 0px;
   top: -64px;
   height: 512px;
   display: block;
 }
-#part-6 .main-part-6 .background-images-part-6 .upper-corner .ball-2 {
+#part-6 .main-part-6 .background-images-part-6 .upper-corner div img {
   max-height: 100%;
   max-width: 100%;
   height: auto;
   width: auto;
 }
-#part-6 .main-part-6 .background-images-part-6 .upper-corner .ball-4 {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 16px;
+  border: 1px solid var(--colors-cardBorder);
+  box-sizing: border-box;
+  backdrop-filter: blur(12px);
+  border-radius: 72px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0px;
+  width: 968px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
-#part-6 .main-part-6 .background-images-part-6 .upper-corner .ball-6 {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner h2 {
+  font-size: 40px;
+  color: var(--colors-text);
+  margin-bottom: 24px;
+  text-align: center;
 }
-#part-6 .main-part-6 .background-images-part-6 .upper-corner .ball-7 {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner h2 span {
+  color: var(--colors-secondary);
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 100%;
 }
-#part-6 .main-part-6 .background-images-part-6 .upper-corner .ball-9 {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(2) {
+  color: var(--colors-textSubtle);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
 }
-
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(3) {
+  color: var(--colors-textSubtle);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin: 0px auto;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container {
+  display: flex;
+  flex: 1;
+  margin-right: 24px;
+  margin-bottom: 0px;
+  max-width: 100%;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow {
+  transform: rotate(-2.36deg);
+  background: rgb(255, 178, 55);
+  border-radius: var(--radii-card);
+  color: var(--colors-text);
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left {
+  background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+  border-radius: var(--radii-card);
+  padding: 24px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .svg-card-left {
+  transform: rotate(-2.36deg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-content div:nth-child(1) {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-content div:nth-child(3) {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-content div:nth-child(4) {
+  color: rgb(40, 13, 95);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-button {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-button a {
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-button a button {
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: var(--colors-primary);
+  color: var(--colors-invertedContrast);
+  width: 100%;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-button a button div {
+  color: var(--colors-invertedContrast);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .card-left-button a button svg {
+  align-self: center;
+  fill: var(--colors-invertedContrast);
+  color: var(--colors-invertedContrast);
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow {
+  transform: rotate(1.43deg);
+  height: fit-content;
+  padding: 1px 1px 4px;
+  box-sizing: border-box;
+  background: rgb(60, 23, 134);
+  border-radius: var(--radii-card);
+  color: var(--colors-text);
+  overflow: hidden;
+  position: relative;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow .card-right {
+  width: 100%;
+  height: 100%;
+  overflow: initial;
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+  border-radius: var(--radii-card);
+  padding: 24px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow .card-right .svg-card-right {
+  transform: rotate(1.43deg);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow .card-right .svg-card-right svg {
+  align-self: center;
+  fill: var(--colors-white);
+  color: var(--colors-white);
+  flex-shrink: 0;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow .card-right .card-right-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow .card-right .card-right-content div:nth-child(1) {
+  color: var(--colors-white);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+}
+#part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow .card-right .card-right-content div:nth-child(2) {
+  text-decoration: none;
+  color: var(--colors-text);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 40px;
+}
 /* Part 7 */
 #part-7 {
   background-color: var(--colors-background);
@@ -1880,8 +2077,8 @@ footer .mobile {
 }
 .icons-footer a {
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
-  width: -moz-fit-content;
   width: fit-content;
   color: var(--colors-primary);
   font-weight: 600;
@@ -1907,6 +2104,7 @@ footer .mobile {
   display: flex;
   order: 1;
   flex-direction: column;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 @media screen and (min-width: 576px) {
@@ -1937,6 +2135,7 @@ footer .mobile {
   background: transparent;
   border: none;
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -1944,6 +2143,7 @@ footer .mobile {
   display: inline-flex;
   font-family: inherit;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -1984,7 +2184,6 @@ footer .mobile {
   opacity: 0;
   transition: max-height 0s ease 0.3s, opacity 0.3s ease-in-out 0s;
   will-change: opacity;
-  width: -moz-max-content;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -1996,6 +2195,7 @@ footer .mobile {
 }
 .buttons-footer-left .lang-select-content button {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   cursor: pointer;
@@ -2003,6 +2203,7 @@ footer .mobile {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -2044,7 +2245,9 @@ footer .mobile {
 .buttons-footer-right {
   display: flex;
   order: 1;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
   align-items: center;
   margin-bottom: 24px;
 }
@@ -2078,6 +2281,7 @@ footer .mobile {
 }
 .buttons-footer-right .buy-btn {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -2087,6 +2291,7 @@ footer .mobile {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -2171,7 +2376,6 @@ input:checked + .slider:before {
 }
 
 .tele-lang {
-  width: -moz-max-content;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -2193,6 +2397,7 @@ input:checked + .slider:before {
 }
 .tele-lang button {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   cursor: pointer;
@@ -2200,6 +2405,7 @@ input:checked + .slider:before {
   font-family: inherit;
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -2252,4 +2458,6 @@ input:checked + .slider:before {
 }
 .go-top:hover {
   opacity: 0.65;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
