@@ -4,6 +4,105 @@
 /* NAVBAR */
 @import '../mainpage/navbar.scss';
 
-
 /* FOOTER */
 @import '../mainpage/footer.scss';
+
+/* IFO WEBPAGE */
+#ifo {
+    header {
+        width: 100%;
+        .main-header-wrapper {
+            width: 100%;
+
+            nav.select-section {
+                display: flex;
+                height: fit-content;
+                padding-top: 1rem;
+                justify-content: center;
+                align-items: flex-end;
+                border: none;
+                gap: 1.5rem;
+                background-color: var(--colors-backgroundAlt2);
+
+                button {
+                    border: none;
+                    background-color: transparent;
+                    font-size: 1rem;
+                    padding-bottom: 0.5rem;
+                    color: var(--colors-textSubtle);
+                    cursor: pointer;
+
+                    &.selected {
+                        position: relative;
+                        font-weight: 600;
+                        color: var(--colors-secondary);
+
+                        &::after {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            content: "";
+                            background-color: var(--colors-primary);
+                            width: 100%;
+                            height: 4px;
+                        }
+                    }
+                }
+            }
+
+            .info-page {
+                width: 100%;
+                background-image: url(../../public/ifo-banner-light.png);
+                background-position: center top, center center;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                padding: 2rem 1.5rem;
+                min-height: 197px;
+                color: var(--colors-text);
+
+                .info-page-wrapper {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 1.5rem;
+
+                    h1 {
+                        font-size: 4rem;
+                        line-height: 1.1;
+                        max-width: 70vw;
+                    }
+
+                    .more-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        font-size: 0.8rem;
+                        line-height: 1.5;
+                        
+                        a {
+                            box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                            font-size: 1rem;
+                            display: inline-flex;
+                            align-items: center;
+                            font-weight: 600;
+                            letter-spacing: 0.03rem;
+                            background-color: var(--colors-textSubtle);
+                            color: var(--colors-backgroundAlt);
+                            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                            height: 3rem;
+                            padding: 0 1.5rem;
+                            border-radius: 16px;
+
+                            &:hover {
+                                opacity: 0.65;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
