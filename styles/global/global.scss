@@ -14,8 +14,12 @@
     a{
         text-decoration: none;
     }
+    -webkit-font-smoothing: antialiased;
 }
-
+body {
+    position: relative;
+    z-index: -5;
+}
 :root {
     --colors-light-white: #fff;
     --colors-light-failure: #ed4b9e;
