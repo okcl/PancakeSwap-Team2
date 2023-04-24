@@ -1981,11 +1981,17 @@ nav a {
   #part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow {
     transform: rotate(0deg);
   }
+  #part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-left-container .card-left-shadow .card-left .svg-card-left {
+    transform: rotate(0deg);
+  }
   #part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container {
     max-width: 275px;
     padding: 0;
   }
   #part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow {
+    transform: rotate(0deg);
+  }
+  #part-6 .main-part-6 .background-images-part-6 .part-6-banner div:nth-child(4) .card-right-container .card-right-shadow .card-right .svg-card-right svg {
     transform: rotate(0deg);
   }
 }
