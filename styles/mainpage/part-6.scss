@@ -489,3 +489,137 @@
         }
     }
 }
+
+//---------------------- MEDIA QUERIES ----------------------//
+@media screen and (max-width: 852px) {
+    #part-6 {
+    
+        .main-part-6 {
+            .background-images-part-6 {
+                .lower-corner {
+                    div {
+                        position: absolute;
+                        left: 0px;
+                        bottom: -64px;
+                        max-width: 192px;
+                        max-height: 192px;
+                    }
+                }
+                .upper-corner {
+                    div {
+                        max-width: 192px;
+                        max-height: 192px;
+                    }
+                }
+                .part-6-banner {
+                    padding: 16px;
+                    
+                    h2 {
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 1.1;
+                    }
+                    div:nth-child(4) {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        .card-left-container {
+                            max-width: 275px;
+                            margin-bottom: 32px;
+                            margin-right: 0;
+                            .card-left-shadow {
+                                transform: rotate(0deg);
+                                .card-left {
+                                    
+                                    .svg-card-left {
+                                        
+                                    }
+                                    .card-left-content {
+                                        
+                                        div:nth-child(1) {
+                                            
+                                        }
+                                        
+                                        h2 {
+                                            
+                                        }
+                                        div:nth-child(3) {
+                                            
+                                        }
+                                        div:nth-child(4) {
+                                            
+                                        }
+                                    }
+                                    .card-left-button {
+                                        
+                                        a {
+                                            
+                                            button {
+                                                
+                                                &:hover{
+                                                    
+                                                }
+                                                div {
+                                                    
+                                                }
+                                                svg {
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .card-right-container {
+                            max-width: 275px;
+                            padding: 0;
+                            .card-right-shadow {
+                                transform: rotate(0deg);
+                                
+                                .card-right {
+                                    
+                                    .svg-card-right {
+                                        
+                                        svg {
+                                            
+                                        }
+                                    }
+                                    .card-right-content {
+                                        
+                                        div:nth-child(1){
+                                            
+                                        }
+                                        div:nth-child(2){
+                                            
+                                        }
+                                        div:nth-child(3) {
+                                            
+                                        }
+                                        div:nth-child(4) {
+                                            
+                                        }
+                                    }
+                                    .card-right-button {
+                                        
+                                        a {
+                                            
+                                            button {
+                                                
+                                                div {
+                                                    
+                                                }
+                                                svg {
+                                                }    
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
