@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Farm Offering | PancakeSwap</title>
+
+    <link rel="stylesheet" href="../styles/ifo-page/ifo-page.css">
+</head>
+<body>
+    <header class="nav">
+        <nav>
+            <div class="nav1">
+                <div class="nav-logo">
+                  <a href="#">
+                    <img class="logo" src="../public/svgexport-3.svg" alt="" style="width: 160px;"/>
+                    <img class="logo-mobile" src="../public/svgexport-2.svg" alt=""/>
+                  </a>
+                </div>
+                <div class="nav-menu">
+                    <div class="nav-trade">
+                        <div class="link"><a href="#">Trade</a></div>
+                        <div class="down-menu">
+                            <div><a href="#">Swap</a></div>
+                            <div><a href="#">Limit</a></div>
+                            <div><a href="#">Liquidity</a></div>
+                            <div><a href="#">Perpetual</a></div>
+                            <div><a href="#">Bridge</a></div>
+                            <div><a href="#">Limit (V2)</a></div>
+                        </div>
+                    </div>
+                    <div class="nav-earn">
+                      <div class="link"><a href="#">Earn</a></div>
+                      <div class="down-menu">
+                        <div><a href="#">Farms</a></div>
+                        <div><a href="#">Pools</a></div>
+                      </div>
+                    </div>
+                    <div class="nav-win">
+                      <div class="link"><a href="#">Win</a></div>
+                      <div class="down-menu">
+                        <div><a href="#">Trading Competition</a></div>
+                        <div><a href="#">Prediction (BETA)</a></div>
+                        <div><a href="#">Lottery</a></div>
+                        <div><a href="#">Pottery (BETA)</a></div>
+                      </div>
+                    </div>
+                    <div class="nav-nft">
+                      <div class="link"><a href="#">NFT</a></div>
+                      <div class="down-menu">
+                        <div><a href="#">Overview</a></div>
+                        <div><a href="#">Collections</a></div>
+                        <div><a href="#">Activity</a></div>
+                      </div>
+                    </div>
+                    <div class="nav-extra">
+                        <div class="link">
+                          <a href="#">
+                            <img src="../public/svgexport-5.svg" alt="" />
+                          </a>
+                        </div>
+                        <div class="down-menu">
+                            <div><a href="#">Info</a></div>
+                            <div><a href="#">IFO</a></div>
+                            <div><a href="#">Affiliate Program</a></div>
+                            <div><a href="#">Voting</a></div>
+                            <div><a href="#">Leaderboard</a></div>
+                            <div><a href="#">Blog</a></div>
+                            <div><a href="#">Docs</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav2">
+                <div class="nav-currentprice">
+                  <a href="#">
+                    <img src="../public/svgexport-6.svg" alt="" style="width: 24px;"/>
+                    <div class="text-currency">$3.657</div>
+                  </a>
+                </div>
+                <div class="nav-language">
+                    <div class="nav-lang">
+                        <button class="lang-select-btn">
+                            <img src="../public/svgexport-7.svg" alt="" style="width: 24px;"/>
+                        </button>
+                        <div class="lang-down-menu">
+                            <button class="lang-item">English</button>
+                            <button class="lang-item">Deutsch</button>
+                            <button class="lang-item">Espanol</button>
+                            <button class="lang-item">Français</button>
+                            <button class="lang-item">Polski</button>
+                            <button class="lang-item">Türkçe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-settings">
+                    <button>
+                        <img src="../public/svgexport-8.svg" alt="" style="width: 24px;"/>
+                    </button>
+                </div>
+                <div class="nav-network">
+                    <div class="network-select-link">
+                        <div class="link-img">
+                        <img src="../public/bnb.png" alt="" />
+                        </div>
+                        <div class="link-text">
+                        <div class="link-text-desktop">BNB Smart Chain</div>
+                        <div class="link-text-mobile" style="display: none;">BNB</div>
+                        </div>
+                        <img src="../public/svgexport-9.svg" alt="" />
+                    </div>
+                    <div class="network-select-content">
+                        <div class="network-select-text">
+                            <div class="select-network-txt">Select a Network</div>
+                        </div>
+                        <hr />
+                        <button class="active">
+                            <img src="../public/bnb.png" alt="" />
+                            <div class="btn-text">BNB Smart Chain</div>
+                        </button>
+                        <button>
+                            <img src="../public/eth.png" alt="" />
+                            <div class="btn-text">Etherium</div>
+                        </button>
+                        <button>
+                            <img src="../public/apt.png" alt="" />
+                            <div class="btn-text">Aptos</div>
+                        </button>
+                    </div>
+                </div>
+                <button class="nav-connect">
+                    <div class="connect-btn">Connect Wallet</div>
+                    <div class="connect-btn-mobile">Connect</div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <header>
+            <div class="main-header-wrapper">
+                <nav class="select-section">
+                    <button id="latest-select" class="selected">Latest</button>
+                    <button id="finished-select">Finished</button>
+                </nav>
+                <div class="info-page">
+                    <h1>IFO: Initial Farm Offerings</h1>
+                    <div class="more-info">
+                        <h2>Buy new tokens launching on BNB Smart Chain</h2>
+                        <a href="#take-part">How does it work?</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="ifo-main-section">
+            <div class="stake">
+                <div class="box-header">
+                    <div class="main-headings">
+                        <h3>Stake CAKE</h3>
+                        <p>Stake, Earn – And more!</p>
+                    </div>
+                    <div class="images">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="calculators">
+                        <div class="flexible">
+                            <p>Flexible APY:</p>
+                            <div class="numbers">
+                                <p><strong>1.93%</strong></p>
+                                <button><img src="" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="locked">
+                            <p>Locked APR:</p>
+                            <div class="numbers">
+                                <p><strong>Up to 41.35%</strong></p>
+                                <button><img src="" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="start">
+                        <p>Start earning</p>
+                        <button>Connect Wallet</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="box-footer">
+                    <p>Auto/Locked</p>
+                    <img src="" alt="">
+                    <details>
+                        <summary>Details</summary>
+                        <div class="details">
+                            <div class="staked">
+                                <p>Total staked:</p>
+                                <p>266,185,112 CAKE</p>
+                            </div>
+                            <div class="locked">
+                                <p>Total locked:</p>
+                                <p>196,757,436 CAKE</p>
+                            </div>
+                            <div class="lock-duration">
+                                <p>Average lock duration:</p>
+                                <p>43 weeks</p>
+                            </div>
+                            <div class="performance">
+                                <p>Performance Fee</p>
+                                <p>0~2%</p>
+                            </div>
+                            <div class="links">
+                                <a href="#">See Token Info <img src="" alt=""></a>
+                                <a href="#">View Tutorial <img src="" alt=""></a>
+                                <a href="#">View Contract <img src="" alt=""></a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+            <div class="coming-soon">
+                <div class="box-header">
+                    <img src="" alt="">
+                </div>
+                <div class="box-body">
+                    <div class="public-sale">
+                        <div class="public-header">
+                            <h3>Public Sale</h3>
+                            <img src="" alt="">
+                        </div>
+                        <div class="public-body">
+                            <img src="" alt="">
+                            <p>Follow our social channels to learn more about the next IFO.</p>
+                        </div>
+                    </div>
+                    <div class="private-sale">
+                        <div class="private-header">
+                            <h3>Private Sale</h3>
+                        </div>
+                        <div class="private-body">
+                            <img src="" alt="">
+                            <p>Follow our social channels to learn more about the next IFO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="token-vesting">
+                <div class="box-header">
+                    <div class="main-headings">
+                        <h3>Token Vesting</h3>
+                        <p>You have no tokens available for claiming</p>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="box-body">
+                    <img src="" alt="">
+                    <p><strong>You have no tokens available for claiming</strong></p>
+                    <p>Participate in our next IFO. and remember to lock your CAKE to increase your allocation!</p>
+                    <a href="#take-part">How does it work? »</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="take-part">
+
+        </section>
+
+        <section id="details">
+            <img src="" alt="">
+            <div class="details-section">
+                <h3>Details</h3>
+                <details>
+                    <summary>
+                        <p></p>
+                        <p>Details</p>
+                    </summary>
+                    <div class="open">
+                        <p></p>
+                    </div>
+                </details>
+                <details>
+                    <summary>
+                        <p></p>
+                        <p>Details</p>
+                    </summary>
+                    <div class="open">
+                        <p></p>
+                    </div>
+                </details>
+                <details>
+                    <summary>
+                        <p></p>
+                        <p>Details</p>
+                    </summary>
+                    <div class="open">
+                        <p></p>
+                    </div>
+                </details>
+                <details>
+                    <summary>
+                        <p></p>
+                        <p>Details</p>
+                    </summary>
+                    <div class="open">
+                        <p></p>
+                    </div>
+                </details>
+                <details>
+                    <summary>
+                        <p></p>
+                        <p>Details</p>
+                    </summary>
+                    <div class="open">
+                        <p></p>
+                    </div>
+                </details>
+                <details>
+                    <summary>
+                        <p></p>
+                        <p>Details</p>
+                    </summary>
+                    <div class="open">
+                        <p></p>
+                    </div>
+                </details>
+            </div>
+            <a href="#">Apply to run an IFO!</a>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <!-- Part 9-->
+            <div id="links-footer">
+                <div class="about">
+                    <h4>About</h4>
+                    <a href="#"><strong class="yellow">Contact</strong></a>
+                    <a href="#">Brand</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Community</a>
+                    <a href="#">Litepaper</a>
+                </div>
+                <div class="help">
+                    <h4>Help</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Troubleshooting</a>
+                    <a href="#">Guides</a>
+                </div>
+                <div class="developers">
+                    <h4>Developers</h4>
+                    <a href="#">Github</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Bug Bounty</a>
+                    <a href="#">Audits</a>
+                    <a href="#">Careers</a>
+                </div>
+                <img class="desktop" src="../public/svgexport-36.svg" width="160px" alt="Pancake Swap Logo">
+            </div>
+            <img class="mobile" src="../public/svgexport-36.svg" width="160px" alt="Pancake Swap Logo">
+            <!-- Part 10-->
+            
+            <div class="icons-footer">
+                <a href="#"><img src="../public/svgexport-38.svg" alt="Twitter"></a>
+                <div class="telegram"><a href="#"><img src="../public/svgexport-39.svg" alt="Telegram"></a>
+                    <div class="tele-lang">
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswap">English</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeSwap_DE">Deutsch</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeswapEs">Español</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswapfr">Français</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeSwapPortuguese">Português</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswapturkiye">Türkçe</a></button>
+                    </div>
+                </div>
+                <a href="#"><img src="../public/svgexport-40.svg" alt="Reddit"></a>
+                <a href="#"><img src="../public/svgexport-41.svg" alt="Instagram"></a>
+                <a href="#"><img src="../public/svgexport-42.svg" alt="Github"></a>
+                <a href="#"><img src="../public/svgexport-43.svg" alt="Discord"></a>
+                <a href="#"><img src="../public/svgexport-44.svg" alt="Youtube"></a>        
+            </div>
+
+            <div class="buttons-footer">
+
+                <div class="buttons-footer-left">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+
+                    <div class="lang-select">
+                        <button class="lang-select-btn">
+                            <img src="../public/svgexport-7.svg" alt="">
+                            <div>EN</div>
+                        </button>
+                        <div class="lang-select-content">
+                            <button class="lang-item">English</button>
+                            <button class="lang-item">Deutsch</button>
+                            <button class="lang-item">Espanol</button>
+                            <button class="lang-item">Français</button>
+                            <button class="lang-item">Português</button>
+                            <button class="lang-item">Türkçe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-footer-right">
+                    <div class="currency-price">
+                        <a href="#">
+                            <img src="../public/svgexport-6.svg" alt="" style="width: 24px;">
+                            <div class="text-currency">$3.657</div>
+                        </a>
+                    </div>
+                    <a href="#" class="buy-btn">Buy CAKE <img src="../public/svgexport-10.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+       </footer>
+    <div class="go-top-container">
+        <button class="go-top">
+            <a href="#"><img src="../public/svgexport-57.svg" alt="arrow-up"></a>
+        </button>
+    </div>
+</body>
+</html>
