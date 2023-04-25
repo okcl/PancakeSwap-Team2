@@ -504,3 +504,150 @@ color: var(--colors-invertedContrast);
 .connect-btn-mobile {
   display: none;
 }
+
+
+.mobile-nav-wrap {
+  display: block;
+
+  .mobile-nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background: var(--colors-backgroundAlt);
+    border-top: 1px solid var(--colors-cardBorder);
+    padding-bottom: env(safe-area-inset-bottom);
+    z-index: 20;
+    .mbnav-el{
+      .mbnav-btn{
+        padding-top: 3px;
+        .mbnav-btn{
+          span{
+            display: inline-flex;
+            width: fit-content;
+            position: relative;
+            a{
+              display: block;
+              border: 0px none;
+              background: transparent;
+              cursor: pointer;
+              width: 45px;
+              height: 44px;
+              padding: 4px 12px;
+              &:hover {
+                background: var(--colors-tertiary);
+                border-radius: 16px;
+              }
+              .mnav-btn-cntnt{
+                display: flex;
+                flex-direction: column;
+                -moz-box-pack: center;
+                justify-content: center;
+                -moz-box-align: center;
+                align-items: center;
+                width: 100%;
+                .mnbc-svg{
+                  position: relative;
+                  height: 20px;
+                  width: 20px;
+                }
+                .mnbc-txt{
+                  margin-top: 5px;
+                  display: -webkit-box;
+                  overflow: hidden;
+                  -webkit-line-clamp: 1;
+                  -moz-box-orient: vertical;
+                  user-select: none;
+                  color: var(--colors-textSubtle);
+                  line-height: 1.5;
+                  font-weight: 400;
+                  font-size: 10px;
+                  text-align: center;
+                }
+              }
+            }
+            .mbnav-success{
+              margin: 4px 0 4px 0;
+              display: inline-flex;
+              position: absolute;
+              top: 0px;
+              right: 0px;
+              width: 10px;
+              height: 10px;
+              pointer-events: none;
+              border: 2px solid var(--colors-invertedContrast);
+              border-radius: 50%;
+              background-color: var(--colors-success);
+            }
+          }
+        }
+      }
+      .mbnav-list{
+        position: absolute;
+        inset: auto auto 0px 0px;
+        transform: translate(0px, -50px);
+        --webkit-transition: 0.3s;
+        background-color: var(--colors-backgroundAlt);
+        border: 1px solid var(--colors-cardBorder);
+        border-radius: 16px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        margin-bottom: 0px;
+        width: calc(100% - 32px);
+        z-index: 1001;
+        pointer-events: none;
+        visibility: hidden;
+        .mnli-el{
+          height: 48px;
+          a{
+            -moz-box-align: center;
+            align-items: center;
+            border: 0px none;
+            background: transparent;
+            color: var(--colors-textSubtle);
+            cursor: pointer;
+            font-weight: 400;
+            display: flex;
+            font-size: 16px;
+            height: 48px;
+            -moz-box-pack: justify;
+            justify-content: space-between;
+            outline: 0px;
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 100%;
+            pointer-events: inherit;
+
+            .mnli-el-new{
+              border-radius: var(--radii-default);
+              padding: 0px 8px;
+              border-style: solid;
+              border-width: 2px;
+              border-image: none 100% / 1 / 0 stretch;
+              border-color: var(--colors-success);
+              box-shadow: none;
+              color: var(--colors-success);
+              margin-left: 8px;
+            }
+          }
+          &:hover{
+            background: var(--colors-tertiary);
+          }
+        }
+
+      }
+      &:hover .mbnav-list{
+        visibility: visible;
+        pointer-events: auto;
+      }
+      
+    }
+  }
+  @media screen and (min-width: 576px) {
+    display: none;
+  }
+}
