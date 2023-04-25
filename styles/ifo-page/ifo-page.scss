@@ -9,6 +9,26 @@
 
 /* IFO WEBPAGE */
 
+@mixin button-connect {
+    background-color: var(--colors-primary);
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 3rem;
+    padding: 0 1.5rem;
+    color: var(--colors-invertedContrast);
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.65;
+    }
+}
+
 @mixin main-box-style {
     border-radius: 24px;
     border: 1px solid var(--colors-cardBorder);
@@ -206,8 +226,12 @@
                             gap: 0.2rem;
                             text-transform: initial;
                             font-size: 0.95rem;
-                            color: var(--colors-text);
                             align-items: center;
+
+                            strong {
+                                color: var(--colors-text);
+                                font-size: 1rem;
+                            }
                         }
                     }
                 }
@@ -222,20 +246,8 @@
                     }
 
                     button {
+                        @include button-connect;
                         width: 100%;
-                        background-color: var(--colors-primary);
-                        box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
-                        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-                        height: 3rem;
-                        padding: 0 1.5rem;
-                        color: var(--colors-invertedContrast);
-                        cursor: pointer;
-                        border-radius: 16px;
-                        font-size: 1rem;
-                        font-weight: 600;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
                     }
                 }
             }
@@ -407,7 +419,47 @@
     }
 
     #take-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
 
+        h2 {
+            font-size: 2.5rem;
+            color: var(--colors-secondary);
+        }
+
+        .take-part-steps {
+            display: grid;
+
+            & > div {
+                display: flex;
+
+                &.one {
+                    button {
+                        border: 0;
+                        @include button-connect;
+                    }
+                }
+
+                .step {
+                    .step-line {
+
+                        .activated {
+
+                        }
+
+                        &.double {
+
+                        }
+                    }
+                }
+
+                .description {
+                        
+                }
+            }
+        }
     }
 
     #details {
