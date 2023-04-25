@@ -101,7 +101,6 @@ footer .footer-wrapper {
 
 .buttons-footer{
     border-color: #383241;
-
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-left-width: 0;
@@ -293,7 +292,6 @@ footer .footer-wrapper {
       }
       .buy-btn {
         position: relative;
-        -webkit-box-align: center;
         align-items: center;
         border: 0px;
         border-radius: 16px;
@@ -303,7 +301,6 @@ footer .footer-wrapper {
         font-family: inherit;
         font-size: 16px;
         font-weight: 600;
-        -webkit-box-pack: center;
         justify-content: center;
         letter-spacing: 0.03em;
         line-height: 1;
@@ -311,7 +308,7 @@ footer .footer-wrapper {
         outline: 0px;
         transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
         height: 32px;
-        padding: 0px 16px;
+        padding: 0 16px;
         background-color: #1fc7d4;
         color: var(--colors-invertedContrast);
         text-decoration: none;
@@ -465,7 +462,6 @@ footer .footer-wrapper {
     bottom: 4.5rem;
     right: 4.5rem;
     padding: 1rem;
-    z-index: 1000;
     border: 0px;
     cursor: pointer;
     &a{
