@@ -1202,33 +1202,44 @@ input:checked + .slider:before {
 }
 #ifo #ifo-main-section {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: minmax(300px, 1fr) minmax(462px, 2fr);
   grid-template-areas: "stake coming coming" "token . .";
   padding: 2.5rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 2rem;
 }
 #ifo #ifo-main-section .stake {
   grid-area: stake;
   border-radius: 24px;
   border: 1px solid var(--colors-cardBorder);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #ifo #ifo-main-section .stake .box-header {
-  background: var(--colors-gradientCardHeader);
   border-radius: 24px 24px 0 0;
   padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#ifo #ifo-main-section .stake .box-header .main-headings h3 {
+#ifo #ifo-main-section .stake .box-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#ifo #ifo-main-section .stake h3 {
   font-size: 1.5rem;
   color: var(--colors-secondary);
 }
-#ifo #ifo-main-section .stake .box-header .main-headings p {
+#ifo #ifo-main-section .stake p {
   color: var(--colors-textSubtle);
   line-height: 1.5;
+}
+#ifo #ifo-main-section .stake .box-header {
+  background: var(--colors-gradientCardHeader);
 }
 #ifo #ifo-main-section .stake .box-header .images {
   position: relative;
@@ -1340,9 +1351,12 @@ input:checked + .slider:before {
 #ifo #ifo-main-section .coming-soon {
   grid-area: coming;
   background: var(--colors-cardBorder);
+  border-radius: 24px;
 }
 #ifo #ifo-main-section .coming-soon .box-header {
   background-image: url(../../public/ifo-coming-soon-desktop.png);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
   border-bottom-left-radius: 100% 40px;
   border-bottom-right-radius: 100% 40px;
   height: 160px;
@@ -1381,7 +1395,7 @@ input:checked + .slider:before {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 0 0 24px 24px;
   background: var(--colors-backgroundAlt);
 }
@@ -1397,11 +1411,70 @@ input:checked + .slider:before {
   text-align: center;
   gap: 1rem;
   background: var(--colors-backgroundAlt);
-  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 0 0 24px 24px;
 }
 #ifo #ifo-main-section .token-vesting {
   grid-area: token;
+  border-radius: 24px;
+  border: 1px solid var(--colors-cardBorder);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: fit-content;
+  justify-content: flex-start;
+}
+#ifo #ifo-main-section .token-vesting .box-header {
+  border-radius: 24px 24px 0 0;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#ifo #ifo-main-section .token-vesting .box-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#ifo #ifo-main-section .token-vesting h3 {
+  font-size: 1.5rem;
+  color: var(--colors-secondary);
+}
+#ifo #ifo-main-section .token-vesting p {
+  color: var(--colors-textSubtle);
+  line-height: 1.5;
+}
+#ifo #ifo-main-section .token-vesting .box-header {
+  background: var(--colors-gradientCardHeader);
+}
+#ifo #ifo-main-section .token-vesting .box-header p {
+  font-size: 0.9rem;
+}
+#ifo #ifo-main-section .token-vesting .box-body {
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+#ifo #ifo-main-section .token-vesting .box-body p {
+  font-size: 0.9rem;
+  color: var(--colors-textSubtle);
+}
+#ifo #ifo-main-section .token-vesting .box-body strong {
+  font-size: 1rem;
+  color: var(--colors-text);
+}
+#ifo #ifo-main-section .token-vesting .box-body img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.8rem;
+}
+#ifo #ifo-main-section .token-vesting .box-body a {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--colors-primary);
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=ifo-page.css.map */

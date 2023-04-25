@@ -8,6 +8,39 @@
 @import '../mainpage/footer.scss';
 
 /* IFO WEBPAGE */
+
+@mixin main-box-style {
+    border-radius: 24px;
+    border: 1px solid var(--colors-cardBorder);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .box-header {
+        border-radius: 24px 24px 0 0;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & .box-body {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: var(--colors-secondary);
+    }
+
+    p {
+        color: var(--colors-textSubtle);
+        line-height: 1.5;
+    }
+}
 #ifo {
     header {
         width: 100%;
@@ -107,38 +140,21 @@
 
     #ifo-main-section {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: minmax(300px, 1fr) minmax(462px, 2fr);
         grid-template-areas:
         "stake coming coming"
         "token . .";
         padding: 2.5rem 1.5rem;
         max-width: 1200px;
         margin: 0 auto;
+        gap: 2rem;
 
         .stake {
             grid-area: stake;
-            border-radius: 24px;
-            border: 1px solid var(--colors-cardBorder);
+            @include main-box-style;
 
             .box-header {
                 background: var(--colors-gradientCardHeader);
-                border-radius: 24px 24px 0 0;
-                padding: 1.5rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                .main-headings {
-                    h3 {
-                        font-size: 1.5rem;
-                        color: var(--colors-secondary);
-                    }
-                    p {
-                        color: var(--colors-textSubtle);
-                        line-height: 1.5;
-                    }
-                }
 
                 .images {
                     position: relative;
@@ -271,9 +287,12 @@
         .coming-soon {
             grid-area: coming;
             background: var(--colors-cardBorder);
+            border-radius: 24px;
 
             .box-header {
                 background-image: url(../../public/ifo-coming-soon-desktop.png);
+                border-top-left-radius: 24px;
+                border-top-right-radius: 24px;
                 border-bottom-left-radius: 100% 40px;
                 border-bottom-right-radius: 100% 40px;
                 height: 160px;
@@ -316,7 +335,7 @@
                         align-items: center;
                         text-align: center;
                         gap: 1rem;
-                        padding: 1.5rem 1.5rem 2rem 1.5rem;
+                        padding: 1.5rem;
                         border-radius: 0 0 24px 24px;
                         background: var(--colors-backgroundAlt);
                     }
@@ -334,7 +353,7 @@
                         text-align: center;
                         gap: 1rem;
                         background: var(--colors-backgroundAlt);
-                        padding: 1.5rem 1.5rem 2rem 1.5rem;
+                        padding: 1.5rem;
                         border-radius: 0 0 24px 24px;
                     }
                 }
@@ -343,7 +362,47 @@
 
         .token-vesting {
             grid-area: token;
+            @include main-box-style;
+            max-height: fit-content;
+            justify-content: flex-start;
 
+            .box-header {
+                background: var(--colors-gradientCardHeader);
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .box-body {
+                align-items: center;
+                gap: 0.5rem;
+                text-align: center;
+                padding: 1.5rem;
+
+                p {
+                    font-size: 0.9rem;
+                    color: var(--colors-textSubtle);
+                }
+
+                strong {
+                    font-size: 1rem;
+                    color: var(--colors-text);
+                }
+                
+                img {
+                    width: 80px;
+                    height: 80px;
+                    margin-bottom: 0.8rem;
+                }
+
+                a {
+                    text-decoration: underline;
+                    font-weight: 600;
+                    color: var(--colors-primary);
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 
