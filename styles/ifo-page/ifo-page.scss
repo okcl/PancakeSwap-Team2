@@ -248,6 +248,7 @@
                 }
 
                 details {
+                    font-weight: 600;
                     color: var(--colors-primary);
                     summary {
                         display: inline-flex;
@@ -255,16 +256,94 @@
                         cursor: pointer;
                         gap: 0.25rem;
                     }
+
+                    &[open] {
+                        summary {
+                            img {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
                 }
             }
         }
         
         .coming-soon {
             grid-area: coming;
+            background: var(--colors-cardBorder);
+
+            .box-header {
+                background-image: url(../../public/ifo-coming-soon-desktop.png);
+                border-bottom-left-radius: 100% 40px;
+                border-bottom-right-radius: 100% 40px;
+                height: 160px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .box-body {
+                display: flex;
+                align-items: center;
+                padding: 1.5rem;
+                gap: 32px;
+                border-radius: 24px;
+                
+                & > div {
+                    max-width: 368px;
+
+                    h3 {
+                        color: var(--colors-text);
+                    }
+
+                    p {
+                        color: var(--colors-text);
+                        font-weight: 600;
+                    }
+                }
+                .public-sale {
+                    .public-header {
+                        background: var(--colors-gradientViolet);
+                        border-radius: 24px 24px 0 0;
+                        padding: 1rem 1.5rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    .public-body {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 1rem;
+                        padding: 1.5rem 1.5rem 2rem 1.5rem;
+                        border-radius: 0 0 24px 24px;
+                        background: var(--colors-backgroundAlt);
+                    }
+                }
+                .private-sale {
+                    .private-header {
+                        border-radius: 24px 24px 0 0;
+                        padding: 1rem 1.5rem;
+                        background: var(--colors-gradientBlue);
+                    }
+                    .private-body {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 1rem;
+                        background: var(--colors-backgroundAlt);
+                        padding: 1.5rem 1.5rem 2rem 1.5rem;
+                        border-radius: 0 0 24px 24px;
+                    }
+                }
+            }
         }
 
         .token-vesting {
             grid-area: token;
+
         }
     }
 
