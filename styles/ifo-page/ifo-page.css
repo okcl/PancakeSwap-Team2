@@ -1269,6 +1269,19 @@ input:checked + .slider:before {
 }
 
 /* IFO WEBPAGE */
+#ifo details {
+  font-weight: 600;
+  color: var(--colors-primary);
+}
+#ifo details summary {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.25rem;
+}
+#ifo details[open] summary img {
+  transform: rotate(180deg);
+}
 #ifo header {
   width: 100%;
 }
@@ -1494,19 +1507,6 @@ input:checked + .slider:before {
   height: 1.75rem;
   border-radius: 16px;
   padding: 0 0.5rem;
-}
-#ifo #ifo-main-section .stake .box-footer details {
-  font-weight: 600;
-  color: var(--colors-primary);
-}
-#ifo #ifo-main-section .stake .box-footer details summary {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  gap: 0.25rem;
-}
-#ifo #ifo-main-section .stake .box-footer details[open] summary img {
-  transform: rotate(180deg);
 }
 #ifo #ifo-main-section .coming-soon {
   grid-area: coming;
@@ -1750,6 +1750,73 @@ input:checked + .slider:before {
 }
 #ifo #take-part .take-part-steps > div .description p.less {
   margin-bottom: 4px;
+}
+#ifo #details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#ifo #details > .details-section-wrapper > img {
+  max-width: 414px;
+}
+#ifo #details > a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--colors-primary);
+  font-weight: 600;
+  margin-top: 2rem;
+  font-size: 1rem;
+  margin-right: 5rem;
+}
+#ifo #details > a:hover {
+  text-decoration: underline;
+}
+#ifo #details .details-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  gap: 2rem;
+  border-radius: 24px;
+}
+#ifo #details .details-section {
+  border: 1px solid var(--colors-cardBorder);
+  border-radius: 24px;
+  width: 100%;
+}
+#ifo #details .details-section h3 {
+  color: var(--colors-secondary);
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--colors-cardBorder);
+  padding: 1.5rem;
+  border-radius: 24px 24px 0 0;
+  background: var(--colors-gradientCardHeader);
+}
+#ifo #details .details-section details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#ifo #details .details-section details summary {
+  border-bottom: 0.5px solid var(--colors-cardBorder);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+#ifo #details .details-section details summary.last {
+  border-radius: 0 0 24px 24px;
+}
+#ifo #details .details-section details summary p:not(summary p:nth-of-type(2)) {
+  color: var(--colors-text);
+}
+#ifo #details .details-section details summary p:nth-of-type(2) {
+  display: inline-flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=ifo-page.css.map */
