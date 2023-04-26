@@ -419,6 +419,8 @@
     }
 
     #take-part {
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -430,10 +432,16 @@
         }
 
         .take-part-steps {
-            display: grid;
+            display: flex;
+            flex-direction: column;
 
             & > div {
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr 80px 1fr;
+                grid-template-areas:
+                ". step description";
+                justify-content: center;
+                align-items: center;
 
                 &.one {
                     button {
@@ -442,10 +450,19 @@
                     }
                 }
 
+                &.two,
+                &.four {
+                    grid-template-areas: 
+                    "description step .";
+                }
+
                 .step {
+                    text-align: center;
+                    grid-area: step;
+
                     .step-line {
 
-                        .activated {
+                        &.activated {
 
                         }
 
@@ -456,7 +473,7 @@
                 }
 
                 .description {
-                        
+                    grid-area: description;
                 }
             }
         }

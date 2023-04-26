@@ -1489,6 +1489,8 @@ input:checked + .slider:before {
   font-size: 0.9rem;
 }
 #ifo #take-part {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1499,10 +1501,15 @@ input:checked + .slider:before {
   color: var(--colors-secondary);
 }
 #ifo #take-part .take-part-steps {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 #ifo #take-part .take-part-steps > div {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  grid-template-areas: ". step description";
+  justify-content: center;
+  align-items: center;
 }
 #ifo #take-part .take-part-steps > div.one button {
   border: 0;
@@ -1522,6 +1529,16 @@ input:checked + .slider:before {
 }
 #ifo #take-part .take-part-steps > div.one button:hover {
   opacity: 0.65;
+}
+#ifo #take-part .take-part-steps > div.two, #ifo #take-part .take-part-steps > div.four {
+  grid-template-areas: "description step .";
+}
+#ifo #take-part .take-part-steps > div .step {
+  text-align: center;
+  grid-area: step;
+}
+#ifo #take-part .take-part-steps > div .description {
+  grid-area: description;
 }
 
 /*# sourceMappingURL=ifo-page.css.map */
