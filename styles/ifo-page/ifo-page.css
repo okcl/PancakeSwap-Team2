@@ -1866,5 +1866,19 @@ input:checked + .slider:before {
   display: inline-flex;
   align-items: center;
 }
+#ifo #details .details-section details[open] > summary {
+  border-bottom: 0;
+}
+#ifo #details .details-section details[open] > div {
+  padding: 1rem 1.5rem;
+  font-weight: 400;
+  color: var(--colors-textSubtle);
+  font-size: 0.925rem;
+  border-bottom: 0.5px solid var(--colors-cardBorder);
+}
+#ifo #details .details-section details[open] > div a {
+  color: var(--colors-primary);
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=ifo-page.css.map */

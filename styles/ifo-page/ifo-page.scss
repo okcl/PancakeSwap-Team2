@@ -674,8 +674,21 @@
                     }
                 }
 
-                .open {
+                &[open] > summary {
+                    border-bottom: 0;
+                }
 
+                &[open] > div {
+                    padding: 1rem 1.5rem;
+                    font-weight: 400;
+                    color: var(--colors-textSubtle);
+                    font-size: 0.925rem;
+                    border-bottom: 0.5px solid var(--colors-cardBorder);
+
+                    a {
+                        color: var(--colors-primary);
+                        font-weight: 600;
+                    }
                 }
             }
         }
