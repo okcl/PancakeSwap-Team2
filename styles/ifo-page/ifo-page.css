@@ -1517,7 +1517,7 @@ input:checked + .slider:before {
   display: none;
 }
 #ifo #ifo-main-section .stake .details.open {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1537,7 +1537,7 @@ input:checked + .slider:before {
 #ifo #ifo-main-section .stake .details.open > .links {
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 1rem;
+  padding-top: 1rem;
 }
 #ifo #ifo-main-section .stake .details.open > .links a {
   font-size: 0.95rem;
