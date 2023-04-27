@@ -1521,15 +1521,36 @@ input:checked + .slider:before {
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 0.925rem;
 }
 #ifo #ifo-main-section .stake .details.open > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+#ifo #ifo-main-section .stake .details.open > div p {
+  color: var(--colors-text);
+}
+#ifo #ifo-main-section .stake .details.open > div .dotted {
+  text-decoration: underline dotted var(--colors-textSubtle);
+}
 #ifo #ifo-main-section .stake .details.open > .links {
   flex-direction: column;
   align-items: flex-end;
+  margin-top: 1rem;
+}
+#ifo #ifo-main-section .stake .details.open > .links a {
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--colors-primary);
+}
+#ifo #ifo-main-section .stake .details.open > .links a img {
+  width: 14px;
+}
+#ifo #ifo-main-section .stake .details.open > .links a:hover {
+  text-decoration: underline;
 }
 #ifo #ifo-main-section .coming-soon {
   grid-area: coming;
@@ -1794,6 +1815,9 @@ input:checked + .slider:before {
   margin-top: 2rem;
   font-size: 1rem;
   margin-right: 5rem;
+}
+#ifo #details > a img {
+  width: 20px;
 }
 #ifo #details > a:hover {
   text-decoration: underline;
