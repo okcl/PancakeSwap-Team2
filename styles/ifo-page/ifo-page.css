@@ -1456,8 +1456,16 @@ input:checked + .slider:before {
   font-size: 0.95rem;
   align-items: center;
 }
-#ifo #ifo-main-section .stake .box-body .calculators > div .numbers strong {
+#ifo #ifo-main-section .stake .box-body .calculators > div .numbers p {
   color: var(--colors-text);
+}
+#ifo #ifo-main-section .stake .box-body .calculators > div .numbers p:hover strong {
+  opacity: 0.5;
+}
+#ifo #ifo-main-section .stake .box-body .calculators > div .numbers p:hover + button {
+  opacity: 0.5;
+}
+#ifo #ifo-main-section .stake .box-body .calculators > div .numbers strong {
   font-size: 1rem;
 }
 #ifo #ifo-main-section .stake .box-body .start p {

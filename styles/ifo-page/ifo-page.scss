@@ -248,10 +248,22 @@
                             font-size: 0.95rem;
                             align-items: center;
 
-                            strong {
+                            p {
                                 color: var(--colors-text);
+
+                                &:hover strong {
+                                    opacity: 0.5;
+                                }
+                            }
+
+                            p:hover + button {
+                                opacity: 0.5;
+                            }
+                            strong {
                                 font-size: 1rem;
                             }
+
+                            
                         }
                     }
                 }
