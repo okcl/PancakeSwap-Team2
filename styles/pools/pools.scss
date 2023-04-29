@@ -1,0 +1,123 @@
+/* GLOBAL */
+@import '../global/global.scss';
+
+/* NAVBAR */
+@import '../mainpage/navbar.scss';
+
+/* FOOTER */
+@import '../mainpage/footer.scss';
+
+.pools{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    @media screen and (min-width: 852px) {
+        min-height: 100vh;
+    }
+    .earn-nav{
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        .enav-wrap{
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            @media screen and (min-width: 576px) {
+                display: block;
+            }
+            .enav-svg1{
+                position: absolute;
+                z-index: 2;
+                width: 48px;
+                height: 100%;
+                top: 0px;
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                will-change: opacity;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.25s ease-out 0s;
+                left: 0px;
+                background: linear-gradient(90deg, rgb(255, 255, 255) 29.76%, rgba(255, 255, 255, 0) 100%);
+                @media screen and (min-width: 852px) {
+                    display:none;
+                }
+            }
+            .enav-svg2{
+                position: absolute;
+                z-index: 2;
+                width: 48px;
+                height: 100%;
+                top: 0px;
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                will-change: opacity;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.25s ease-out 0s;
+                right: 0px;
+                background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 87.5%);
+                @media screen and (min-width: 852px) {
+                    display:none;
+                }
+            }
+            .enav-elements{
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                display: block;
+                white-space: nowrap;
+                scroll-behavior: smooth;
+                -webkit-box-flex: 1;
+                flex-grow: 1;
+                background-color: var(--colors-backgroundAlt2);
+                box-shadow: rgba(133, 133, 133, 0.1) 0px -2px 0px -8px inset;
+                overflow-x: scroll;
+                padding-left: 12px;
+                @media screen and (min-width: 576px) {
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    padding-left: 0px;
+                }
+                @media screen and (min-width: 852px) {
+                    width: auto;
+                    display: flex;
+                }
+                .enav-element{
+                    display: inline-block;
+                    vertical-align: top;
+                    scroll-snap-align: start;
+                    margin-right: 20px;
+                    .enav-element-btn{
+                        position: relative;
+                        a{
+                            position: relative;
+                            display: flex;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            color: var(--colors-secondary);
+                            font-size: 16px;
+                            font-weight: 600;
+                            opacity: 1;
+                            pointer-events: inherit;
+                            padding: 4px 4px 0px;
+                            height: 42px;
+                        }
+                        .slcted{
+                            position: absolute;
+                            bottom: 0px;
+                            height: 4px;
+                            width: 100%;
+                            background-color: var(--colors-primary);
+                            border-radius: 2px 2px 0px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
