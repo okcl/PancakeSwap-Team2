@@ -24,3 +24,33 @@ for (let i = 0; i < detailsBtn.length; i++) {
         }
     });
 }
+
+const selectButtons = document.querySelectorAll('.select-section > button');
+const [selectLatest, selectFinished] = selectButtons;
+
+const divLatest = document.querySelector('.ifo-latest-wrapper');
+const divFinished = document.querySelector('.finished-wrapper');
+const divElements = [divLatest, divFinished];
+
+
+for (let i = 0; i < selectButtons.length; i++) {
+    selectButtons[i]
+        .addEventListener('click', () => {
+            selectButtons.forEach(
+                    button => button.classList.toggle('selected')
+                );
+            divElements.forEach(
+                    div => div.classList.toggle('selected')
+                );
+                
+            if (selectButtons[i] === selectLatest) {
+                divFinished.style.display = 'none';
+                divLatest.style.display = 'block';
+            } else {
+                divLatest.style.display = 'none';
+                divFinished.style.display = 'block';
+            }
+        })
+}
+
+

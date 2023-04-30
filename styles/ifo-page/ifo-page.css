@@ -1376,6 +1376,13 @@ input:checked + .slider:before {
   margin: 0 auto;
   gap: 2rem;
 }
+#ifo #ifo-main-section .ifo-latest-wrapper,
+#ifo #ifo-main-section .finished-wrapper {
+  display: none;
+}
+#ifo #ifo-main-section div.selected {
+  display: block;
+}
 #ifo #ifo-main-section .stake {
   grid-area: stake;
   border-radius: 24px;

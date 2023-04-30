@@ -189,6 +189,15 @@
         margin: 0 auto;
         gap: 2rem;
 
+        .ifo-latest-wrapper,
+        .finished-wrapper {
+            display: none;
+        }
+
+        div.selected {
+            display: block;
+        }
+
         .stake {
             grid-area: stake;
             @include main-box-style;
