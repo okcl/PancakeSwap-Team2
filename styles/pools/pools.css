@@ -1366,4 +1366,109 @@ input:checked + .slider:before {
   width: 100%;
   background-color: var(--colors-primary);
   border-radius: 2px 2px 0px 0px;
+}
+.pools .main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  margin-top: 0px;
+}
+.pools .main .mwrap {
+  flex-grow: 1;
+  transition: margin-top 0.2s ease 0s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  transform: translate3d(0px, 0px, 0px);
+  max-width: 100%;
+}
+.pools .main .mwrap .banner {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--colors-gradientBubblegum);
+}
+.pools .main .mwrap .banner .bwrap1 {
+  position: relative;
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 370px) {
+  .pools .main .mwrap .banner .bwrap1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.pools .main .mwrap .banner .bwrap1 .bwrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 852px) {
+  .pools .main .mwrap .banner .bwrap1 .bwrap {
+    flex-direction: row;
+  }
+}
+.pools .main .mwrap .banner .bwrap1 .bwrap .bsections {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+}
+@media screen and (min-width: 370px) {
+  .pools .main .mwrap .banner .bwrap1 .bwrap .bsections {
+    margin-right: 0px;
+  }
+}
+.pools .main .mwrap .banner .bwrap1 .bwrap .bsections h1 {
+  color: var(--colors-secondary);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+@media screen and (min-width: 968px) {
+  .pools .main .mwrap .banner .bwrap1 .bwrap .bsections h1 {
+    font-size: 60px;
+  }
+}
+.pools .main .mwrap .banner .bwrap1 .bwrap .bsections h2 {
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 16px;
+}
+@media screen and (min-width: 968px) {
+  .pools .main .mwrap .banner .bwrap1 .bwrap .bsections h2 {
+    font-size: 20px;
+  }
+}
+.pools .main .content {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-height: calc(-64px + 100vh);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 370px) {
+  .pools .main .content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .pools .main .content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }/*# sourceMappingURL=pools.css.map */
