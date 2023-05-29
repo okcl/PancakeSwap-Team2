@@ -5,30 +5,50 @@ body {
 
 // --------------- Navbar ----------------
 .nav {
-    .link{
-        display: flex;
-        align-items: center;
-    }
-    #winLink a{
-        color: var(--colors-secondary);
-        font-weight: 600;
-    }
-    #winLink{
-        ::after{
-        content: "";
-        background: var(--colors-failure);
-        height: 8px;
-        width: 8px;
-        border-radius: 100%;
-        margin-left: 12px;
+    nav{
+        .nav1 {
+            .nav-menu {
+                .nav-win {
+                    .link{
+                        display: flex;
+                        align-items: center;
+                    }
+                    #winLink a{
+                        color: var(--colors-secondary);
+                        font-weight: 600;
+                    }
+                    #winLink{
+                        ::after{
+                        content: "";
+                        background: var(--colors-failure);
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 100%;
+                        margin-left: 12px;
+                        }
+                    }
+                    .down-menu {
+                        .tradingRewardLink {
+                            a {
+                                color: var(--colors-secondary);
+                                font-weight:  600;
+                                div {
+                                    color: var(--colors-failure);
+                                    border: solid 2px var(--colors-failure);
+                                    border-radius: 25px;
+                                    padding: 0 5px;
+                                    line-height: 1.2;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
         }
-        
-        
-
-     
-        
     }
-    
 }
 
 // --------------- Toolbar ---------------
@@ -739,96 +759,15 @@ body {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~ 968p ~~~~~~~~~~~~~~~~~~~~
-@media (min-width: 968px) {
-    // --------------- Toolbar ---------------
-
-    .toolbar {
-        .toolbarItem {
-            a {
-            }
-        }
-        .toolbarItemSelected {
-            a {
-            }
-        }
-    }
-
-    // --------------- Section 1 -------------
-    .section1 {
-        
-        .section1MovingParts {
-            img:nth-child(1) {
-            }
-            img:nth-child(2) {
-            }
-            img:nth-child(3) {
-            }
-            img:nth-child(4) {
-            }
-            img:nth-child(5) {
-            }
-        }
-        .section1Container {
-
-            .section1Left {
-                div:nth-child(1) {
-                }
-                div:nth-child(2) {
-                }
-                div:nth-child(3) {
-                }
-                div:nth-child(4) {
-                    a:nth-child(1) {
-                    };
-                    a:nth-child(2) {
-                    }
-                }
-            }
-            .section1Right {
-                .section1RightImage {
-                    img {
-                    }
-                }
-            }
-        }
-    }
+@media (max-width: 968px) {
 
     // --------------- Section 2 -------------
     .section2 {
         .section2Container {
-        .yourTradingReward{    
-        }
-            .section2BannerContainer {
-                .section2Banner {
-                    h2 {
-                    }
-                    button {
-                    }
-                }
-            }
-        }
-        .section2FloatingImages {
-            .left-bunny {
-            };
-            .right-bunny {
-            }
-            .love-butter {
-            }
-        }  
-    }
-
-    // --------------- Section 3 -------------
-    .section3 {
-        .section3Container {
-            .section3Title {
-            }
-            .section3Columns {
-                .section3ColumnItem{
-                    h2:nth-child(1) {
-                    }
-                    h2:nth-child(2) {
-                    }
-                    .viewPairs {
+            .yourTradingReward{    
+                .section2BannerContainer {
+                    .section2Banner {
+                        padding: 24px;
                         h2 {
                         }
                         button {
@@ -836,10 +775,49 @@ body {
                     }
                 }
             }
-            .section3AbsoluteImages {
-                img:nth-child(1) {
+        }
+    }
+
+    // --------------- Section 3 -------------
+    .section3 {
+        .section3Container {
+            .section3Title {
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                line-height: 1;
+            }
+            .section3Columns {
+                .section3ColumnItem{
+                    margin: none;
+                    .viewPairs {
+                        .viewPairsButton {
+                            display: none;
+                        }
+                    }
                 }
-                img:nth-child(2) {
+                .viewPairsButtonMobileContainer {
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 30px;
+                    .viewPairsButtonMobile {
+                        background: linear-gradient(rgb(252, 198, 49) 0%, rgb(255, 157, 0) 100%);
+                        border-radius: 16px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        border: none;
+                        padding: 0px 20px;
+                        line-height: 0.5;
+                        height: 30px;
+                        transition: background-color 0.2s ease 0s opacity 0.2s ease 0s;
+                        letter-spacing: 0.03em;
+                        opacity: 1;
+                        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
                 }
             }
         }
@@ -848,31 +826,24 @@ body {
     // --------------- Section 4 -------------
     .section4 {
         .section4ContainerShadow {
+            background: none;
             .section4Container {
-                h2:nth-child(1) {
-                }
+                background: none;
                 .section4Cards {
+                    display: flex;
+                    flex-flow: column-wrap;
+                    flex-wrap: wrap;
                     .card {
+                        min-width: 400px;
+                        padding: 0 22px;
                         .section4CardTop{
+                            flex-direction: column-reverse;
                             p:nth-child(1) {
+                                justify-content: start;
+                                margin-bottom: 0;
                             }
-                            img {
-                            }
-                        }
-                        h2:nth-child(2) {
-                        }
-                        p:nth-child(3) {
                         }
                     }
-                }
-            }
-        }
-        
-        .section4LearnMore {
-            button {
-                span {
-                }
-                svg {
                 }
             }
         }
@@ -880,19 +851,7 @@ body {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~ 852p ~~~~~~~~~~~~~~~~~~~~
-@media (min-width: 852px) {
-    // --------------- Toolbar ---------------
-
-    .toolbar {
-        .toolbarItem {
-            a {
-            }
-        }
-        .toolbarItemSelected {
-            a {
-            }
-        }
-    }
+@media (max-width: 852px) {
 
     // --------------- Section 1 -------------
     .section1 {
@@ -907,6 +866,7 @@ body {
             img:nth-child(4) {
             }
             img:nth-child(5) {
+                display: none;
             }
         }
         .section1Container {
@@ -927,6 +887,8 @@ body {
             .section1Right {
                 .section1RightImage {
                     img {
+                        width: 175px;
+                        height: 275px;
                     }
                 }
             }
@@ -1021,7 +983,7 @@ body {
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~ 576p ~~~~~~~~~~~~~~~~~~~~
-@media (min-width: 852px) {
+@media (max-width: 576px) {
     // --------------- Toolbar ---------------
 
     .toolbar {
@@ -1161,7 +1123,7 @@ body {
 
 
 // ~~~~~~~~~~~~~~~~~~~~~ 370p ~~~~~~~~~~~~~~~~~~~~
-@media (min-width: 852px) {
+@media (max-width: 852px) {
     // --------------- Toolbar ---------------
 
     .toolbar {

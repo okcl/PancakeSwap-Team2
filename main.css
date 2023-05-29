@@ -2994,21 +2994,34 @@ body {
   background: var(--colors-background);
 }
 
-.nav .link {
+.nav nav .nav1 .nav-menu .nav-win .link {
   display: flex;
   align-items: center;
 }
-.nav #winLink a {
+.nav nav .nav1 .nav-menu .nav-win #winLink a {
   color: var(--colors-secondary);
   font-weight: 600;
 }
-.nav #winLink ::after {
+.nav nav .nav1 .nav-menu .nav-win #winLink ::after {
   content: "";
   background: var(--colors-failure);
   height: 8px;
   width: 8px;
   border-radius: 100%;
   margin-left: 12px;
+}
+.nav nav .nav1 .nav-menu .nav-win .down-menu .tradingRewardLink a {
+  color: var(--colors-secondary);
+  font-weight: 600;
+}
+.nav nav .nav1 .nav-menu .nav-win .down-menu .tradingRewardLink a div {
+  color: var(--colors-failure);
+  border: solid 2px var(--colors-failure);
+  border-radius: 25px;
+  padding: 0 5px;
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .toolbar {
@@ -3618,6 +3631,77 @@ body {
   }
   .section3 .section3Container .section3AbsoluteImages img:nth-child(2) {
     display: none;
+  }
+}
+@media (max-width: 968px) {
+  .section2 .section2Container .yourTradingReward .section2BannerContainer .section2Banner {
+    padding: 24px;
+  }
+  .section3 .section3Container .section3Title {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+  }
+  .section3 .section3Container .section3Columns .section3ColumnItem {
+    margin: none;
+  }
+  .section3 .section3Container .section3Columns .section3ColumnItem .viewPairs .viewPairsButton {
+    display: none;
+  }
+  .section3 .section3Container .section3Columns .viewPairsButtonMobileContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .section3 .section3Container .section3Columns .viewPairsButtonMobileContainer .viewPairsButtonMobile {
+    background: linear-gradient(rgb(252, 198, 49) 0%, rgb(255, 157, 0) 100%);
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 0px 20px;
+    line-height: 0.5;
+    height: 30px;
+    transition: background-color 0.2s ease 0s opacity 0.2s ease 0s;
+    letter-spacing: 0.03em;
+    opacity: 1;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    cursor: pointer;
+  }
+  .section3 .section3Container .section3Columns .viewPairsButtonMobileContainer .viewPairsButtonMobile:hover {
+    opacity: 0.7;
+  }
+  .section4 .section4ContainerShadow {
+    background: none;
+  }
+  .section4 .section4ContainerShadow .section4Container {
+    background: none;
+  }
+  .section4 .section4ContainerShadow .section4Container .section4Cards {
+    display: flex;
+    flex-flow: column-wrap;
+    flex-wrap: wrap;
+  }
+  .section4 .section4ContainerShadow .section4Container .section4Cards .card {
+    min-width: 400px;
+    padding: 0 22px;
+  }
+  .section4 .section4ContainerShadow .section4Container .section4Cards .card .section4CardTop {
+    flex-direction: column-reverse;
+  }
+  .section4 .section4ContainerShadow .section4Container .section4Cards .card .section4CardTop p:nth-child(1) {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 852px) {
+  .section1 .section1MovingParts img:nth-child(5) {
+    display: none;
+  }
+  .section1 .section1Container .section1Right .section1RightImage img {
+    width: 175px;
+    height: 275px;
   }
 }
 
