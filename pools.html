@@ -212,16 +212,334 @@
                             </div>
                         </div>
                         <div class="isstaked">
-                            <label class="switch" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
-                                <div class="slider round"></div>
-                            </label>
+                            <div class="stake-checkbox">
+                                <input type="checkbox" scale="sm" name="stake" id="stake-checkbox">
+                                <div class="sliderr round"></div>
+                            </div>
                             <div class="staked-text" color="text" font-size="16px">Staked only</div>
                         </div>
                     </div>
-                    <div class="csort"></div>
+                    <div class="csort">
+                        <div class="sort-search">
+                            <div class="sort-wrap">
+                                <div class="sort-text">
+                                    Sort by
+                                </div>
+                                <div class="sort">
+                                    <div class="sselected">
+                                        <div class="sbox">
+                                            <div class="stext">
+                                                Hot
+                                            </div>
+                                            <img src="/public/down-arrow-filled.svg" alt="down-arrow">
+                                            <div class="sdropdown-menu">
+                                                <ul>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">APR</div>
+                                                    </li>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">Earned</div>
+                                                    </li>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">Total Staked</div>
+                                                    </li>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">Latest</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-wrap">
+                                <div class="search-text">Search</div>
+                                <div class="searchbox">
+                                    <input type="text" placeholder="Search Pools" scale="md" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="poolboard"></div>
+                <div class="poolboard">
+                    <div class="poolcontent">
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="/public/svgexport-6.svg" class="coinImg" alt="" />
+                                <img src="public/green-reflesh.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Stake CAKE</div>
+                                <div class="headerDesc">Stake, Earn – And more!</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">CAKE Staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Flexible APY</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.85%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">Locked APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">Up to 18.22%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">229,069,913 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0xBdEAe1cA48894A1759A8374D63925f21f2Ee2639.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn EDU</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">EDU Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">5,372,633 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">8.92%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">30 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0x91d6d6aF7635B7b23A8CED9508117965180e2362.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn USH</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">USH Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">4,093,360 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">9.71%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">26 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0x4C882ec256823eE773B25b414d36F92ef58a7c0C.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn PSTAKE</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">PSAKE Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">1,569,188 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">10.48%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">25 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0x2dfF88A56767223A5529eA5960Da7A3F5f766406.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn PSTAKE</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">PSAKE Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">2,669,581 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">9.09%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">24 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="plogo">
                     <img src="public/3d-syrup-bunnies.png" alt="illustration">
                 </div>

@@ -1,6 +1,6 @@
 /* GLOBAL */ /*GLOBALS*/
 /*LINK TO FONT-FAMILY*/
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;900&display=swap");
 /*Add here any global styles*/
 /* NORMALIZING HTML */
 * {
@@ -1570,47 +1570,6 @@ input:checked + .slider:before {
   align-items: center;
   margin-left: 10px;
 }
-.pools .main .content .controlboard .cbuttons .isstaked .switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
-.pools .main .content .controlboard .cbuttons .isstaked .switch input {
-  display: none;
-}
-.pools .main .content .controlboard .cbuttons .isstaked .slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-}
-.pools .main .content .controlboard .cbuttons .isstaked .slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-}
-.pools .main .content .controlboard .cbuttons .isstaked input:checked + .slider {
-  background-color: #66bb6a;
-}
-.pools .main .content .controlboard .cbuttons .isstaked input:checked + .slider:before {
-  transform: translateX(26px);
-}
-.pools .main .content .controlboard .cbuttons .isstaked .slider.round {
-  border-radius: 34px;
-}
-.pools .main .content .controlboard .cbuttons .isstaked .slider.round:before {
-  border-radius: 50%;
-}
 .pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox {
   align-items: center;
   background-color: var(--colors-input);
@@ -1660,6 +1619,386 @@ input:checked + .slider:before {
 .pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox .sliderr.round:before {
   border-radius: 50%;
 }
+.pools .main .content .controlboard .cbuttons .isstaked .staked-text {
+  margin-left: 8px;
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.pools .main .content .controlboard .csort {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0px;
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content .controlboard .csort {
+    width: auto;
+    padding: 0px;
+  }
+}
+.pools .main .content .controlboard .csort .sort-search {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content .controlboard .csort .sort-search {
+    width: auto;
+    padding: 0px;
+  }
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort-text {
+  font-size: 12px;
+  color: var(--colors-textSubtle);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort {
+  display: flex;
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort .sselected {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  background: var(--colors-input);
+  border-radius: 16px;
+  height: 40px;
+  min-width: 136px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  z-index: 20;
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort .sselected .sbox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  box-shadow: var(--shadows-inset);
+  border: 1px solid var(--colors-inputSecondary);
+  border-radius: 16px;
+  background: var(--colors-input);
+  transition: border-radius 0.15s ease 0s;
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort .sselected .sbox .sbox {
+  color: black;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort .sselected .sdropdown-menu {
+  min-width: 136px;
+  height: 0px;
+  position: absolute;
+  overflow: hidden;
+  background: var(--colors-input);
+  z-index: 10;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transform: scaleY(0);
+  transform-origin: center top 0px;
+  opacity: 0;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content .controlboard .csort .sort-search .sort-wrap .sort .sselected .sdropdown-menu {
+    min-width: 168px;
+  }
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort .sselected .sdropdown-menu ul {
+  list-style: inside;
+  box-sizing: border-box;
+}
+.pools .main .content .controlboard .csort .sort-search .sort-wrap .sort .sselected .sdropdown-menu ul li {
+  list-style: none;
+  padding: 8px 16px;
+}
+.pools .main .content .controlboard .csort .sort-search .search-wrap {
+  margin-left: 16px;
+}
+.pools .main .content .controlboard .csort .sort-search .search-wrap .search-text {
+  color: var(--colors-textSubtle);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.pools .main .content .controlboard .csort .sort-search .search-wrap .searchbox {
+  position: relative;
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content .controlboard .csort .sort-search .search-wrap .searchbox {
+    display: block;
+  }
+}
+.pools .main .content .controlboard .csort .sort-search .search-wrap .searchbox input {
+  border-radius: 16px;
+  margin-left: auto;
+  background-color: var(--colors-input);
+  border-radius: 16px;
+  box-shadow: var(--shadows-inset);
+  color: var(--colors-text);
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  outline: 0px;
+  padding: 0px 16px;
+  width: 100%;
+  border: 1px solid var(--colors-inputSecondary);
+}
+.pools .main .content .poolboard {
+  border-radius: var(--radii-card);
+  background-color: var(--colors-cardBorder);
+  padding: 1px 1px 3px;
+  background-size: 400% 400%;
+}
+.pools .main .content .poolboard .poolcontent {
+  border-radius: var(--radii-card);
+  scroll-margin-top: 64px;
+  background-color: var(--colors-backgroundAlt);
+}
+.pools .main .content .poolboard .poolcontent .row {
+  height: 88px;
+  display: flex;
+  border-bottom: 2px solid var(--colors-cardBorder);
+}
+.pools .main .content .poolboard .poolcontent .row .border {
+  border: 1px solid whhite;
+}
+.pools .main .content .poolboard .poolcontent .row .column1 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 150px;
+  display: flex;
+  color: black;
+  padding: 24px 8px 24px 32px;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.pools .main .content .poolboard .poolcontent .row .column1 .imgContainer {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  position: relative;
+}
+.pools .main .content .poolboard .poolcontent .row .column1 .imgContainer .coinImg {
+  width: 37px;
+  height: 37px;
+}
+.pools .main .content .poolboard .poolcontent .row .column1 .imgContainer .cycle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pools .main .content .poolboard .poolcontent .row .column1 .desc {
+  display: flex;
+  flex-direction: column;
+}
+.pools .main .content .poolboard .poolcontent .row .column1 .desc .header {
+  line-height: 1;
+  color: var(--colors-text);
+  font-weight: 600;
+  font-size: 16px;
+}
+.pools .main .content .poolboard .poolcontent .row .column1 .desc .headerDesc {
+  line-height: 1;
+  font-size: 12px;
+  color: var(--colors-textSubtle);
+}
+.pools .main .content .poolboard .poolcontent .row .column3 {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 120px;
+  color: black;
+  padding: 24px 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.pools .main .content .poolboard .poolcontent .row .column3 .desc {
+  margin-top: -3px;
+  display: flex;
+  flex-direction: column;
+}
+.pools .main .content .poolboard .poolcontent .row .column3 .desc .header {
+  line-height: 1;
+  color: var(--colors-textSubtle);
+  font-weight: 400;
+  font-size: 12px;
+}
+.pools .main .content .poolboard .poolcontent .row .column3 .desc .headerDesc {
+  line-height: 1;
+  font-size: 12px;
+  color: var(--colors-textSubtle);
+}
+.pools .main .content .poolboard .poolcontent .row .column3 .desc .headerDesc .subMainDesc {
+  margin: 4px 0;
+  color: var(--colors-textSubtle);
+  font-size: 16px;
+  font-weight: 400;
+}
+.pools .main .content .poolboard .poolcontent .row .column3 .desc .headerDesc .subDesc {
+  color: var(--colors-textSubtle);
+  font-size: 12px;
+  font-weight: 400;
+}
+.pools .main .content .poolboard .poolcontent .row .column4 {
+  padding: 24px 8px;
+  color: black;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 100px;
+}
+.pools .main .content .poolboard .poolcontent .row .column4 .desc {
+  margin-top: -3px;
+  display: flex;
+  flex-direction: column;
+}
+.pools .main .content .poolboard .poolcontent .row .column4 .desc .header {
+  margin: 2px 0 -2px 0;
+  line-height: 1;
+  color: var(--colors-textSubtle);
+  font-weight: 400;
+  font-size: 12px;
+}
+.pools .main .content .poolboard .poolcontent .row .column4 .desc .headerDesc {
+  display: flex;
+  line-height: 1;
+  font-size: 12px;
+  color: var(--colors-textSubtle);
+  transition: 350ms;
+}
+.pools .main .content .poolboard .poolcontent .row .column4 .desc .headerDesc:hover {
+  opacity: 0.65;
+}
+.pools .main .content .poolboard .poolcontent .row .column4 .desc .headerDesc .subMainDesc {
+  margin: 4px 0;
+  color: var(--colors-text);
+  font-size: 16px;
+  font-weight: 400;
+}
+.pools .main .content .poolboard .poolcontent .row .column4 .desc .headerDesc .descImg {
+  margin-left: 4px;
+}
+.pools .main .content .poolboard .poolcontent .row .column5 {
+  color: black;
+  padding: 24px 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 120px;
+}
+.pools .main .content .poolboard .poolcontent .row .column5 .desc {
+  margin-top: -3px;
+  display: flex;
+  flex-direction: column;
+}
+.pools .main .content .poolboard .poolcontent .row .column5 .desc .header {
+  margin: 2px 0 -2px 0;
+  line-height: 1;
+  color: var(--colors-textSubtle);
+  font-weight: 400;
+  font-size: 12px;
+}
+.pools .main .content .poolboard .poolcontent .row .column5 .desc .headerDesc {
+  display: flex;
+  line-height: 1;
+  font-size: 12px;
+  color: var(--colors-textSubtle);
+  transition: 350ms;
+}
+.pools .main .content .poolboard .poolcontent .row .column5 .desc .headerDesc:hover {
+  opacity: 0.65;
+}
+.pools .main .content .poolboard .poolcontent .row .column5 .desc .headerDesc .subMainDesc {
+  margin: 4px 0;
+  color: var(--colors-text);
+  font-size: 16px;
+  font-weight: 400;
+}
+.pools .main .content .poolboard .poolcontent .row .column5 .desc .headerDesc .descImg {
+  margin-left: 4px;
+}
+.pools .main .content .poolboard .poolcontent .row .column6 {
+  display: flex;
+  flex-grow: 2;
+  flex-shrink: 0;
+  flex-basis: 100px;
+  color: black;
+  padding: 24px 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.pools .main .content .poolboard .poolcontent .row .column6 .desc {
+  margin-top: -3px;
+  display: flex;
+  flex-direction: column;
+}
+.pools .main .content .poolboard .poolcontent .row .column6 .desc .header {
+  margin: 2px 0 -2px 0;
+  line-height: 1;
+  color: var(--colors-textSubtle);
+  font-weight: 400;
+  font-size: 12px;
+}
+.pools .main .content .poolboard .poolcontent .row .column6 .desc .headerDesc {
+  display: flex;
+  line-height: 1;
+  font-size: 12px;
+  color: var(--colors-textSubtle);
+  transition: 350ms;
+}
+.pools .main .content .poolboard .poolcontent .row .column6 .desc .headerDesc:hover {
+  opacity: 0.65;
+}
+.pools .main .content .poolboard .poolcontent .row .column6 .desc .headerDesc .subMainDesc {
+  margin: 4px 0;
+  color: var(--colors-text);
+  font-size: 16px;
+  font-weight: 400;
+}
+.pools .main .content .poolboard .poolcontent .row .column7 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 120px;
+  padding: 24px 32px 24px 8px;
+}
+.pools .main .content .poolboard .poolcontent .row .column7 .desc {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  vertical-align: baseline;
+  display: flex;
+  line-height: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--colors-primary);
+}
+.pools .main .content .poolboard .poolcontent .row .column7 .desc .headerDesc {
+  display: flex;
+  align-items: center;
+}
+.pools .main .content .plogo {
+  max-height: 184.5px;
+  max-width: 192px;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+}
 
 button {
   position: relative;
@@ -1682,4 +2021,12 @@ button {
   background-color: transparent;
   color: var(--colors-primary);
   box-shadow: none;
+}
+
+::-moz-placeholder {
+  color: #c0ace4;
+}
+
+::placeholder {
+  color: #c0ace4;
 }/*# sourceMappingURL=pools.css.map */
