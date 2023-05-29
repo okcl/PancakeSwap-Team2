@@ -1,0 +1,13 @@
+.toolbar {
+  width: auto;
+  display: flex;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background-color: var(--colors-backgroundAlt2);
+  -webkit-box-flex: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=lottery.css.map */
