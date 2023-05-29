@@ -3696,12 +3696,86 @@ body {
   }
 }
 @media (max-width: 852px) {
+  .toolbar {
+    display: flex;
+    justify-content: start;
+  }
+  .section1 .section1MovingParts {
+    height: 60%;
+  }
+  .section1 .section1MovingParts img:nth-child(4) {
+    width: 66px;
+    height: 48px;
+    left: 28%;
+    top: 20%;
+  }
   .section1 .section1MovingParts img:nth-child(5) {
     display: none;
+  }
+  .section1 .section1Container .section1Left {
+    width: 100%;
+  }
+  .section1 .section1Container .section1Left div:nth-child(1) {
+    font-size: 40px;
+  }
+  .section1 .section1Container .section1Left div:nth-child(3) {
+    font-size: 16px;
+    line-height: 1.5;
   }
   .section1 .section1Container .section1Right .section1RightImage img {
     width: 175px;
     height: 275px;
+  }
+  .section2 .section2Container #yourTradingReward {
+    font-size: 45px;
+  }
+  .section2 .section2Container .section2BannerContainer .section2Banner {
+    padding: 24px;
+  }
+  .section3 .section3Container .section3Columns {
+    margin: 40px 0 0 0;
+    width: 100%;
+  }
+  .section3 .section3Container .section3Columns .section3ColumnItem h2:nth-child(1) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .section3 .section3Container .section3Columns .section3ColumnItem h2:nth-child(2) {
+    font-size: 14px;
+  }
+  .section4 .section4ContainerShadow .section4Container .section4Cards .card {
+    padding: 42px 22px;
+  }
+}
+@media (max-width: 576px) {
+  .section1 .section1MovingParts img:nth-child(4) {
+    left: 15%;
+  }
+}
+@media (max-width: 370px) {
+  .section2 {
+    padding: 48px 0 0 0;
+  }
+  .section2 .section2Container #yourTradingReward {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .section3 .section3Container .section3Title {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  .section4 .section4ContainerShadow .section4Container {
+    padding-bottom: 0;
+  }
+  .section4 .section4ContainerShadow .section4Container .section4Cards .card {
+    min-width: 100%;
+  }
+  .section4 .section4LearnMore {
+    margin-top: 0;
   }
 }
 
