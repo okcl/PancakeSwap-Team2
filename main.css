@@ -3464,6 +3464,9 @@ body {
 .section3 .section3Container .section3Columns .section3ColumnItem .viewPairs button:hover {
   opacity: 0.7;
 }
+.section3 .section3Container .section3Columns .viewPairsButtonMobileContainer button {
+  display: none;
+}
 .section3 .section3Container .section3AbsoluteImages img:nth-child(1) {
   position: absolute;
   bottom: -12%;
@@ -3655,6 +3658,7 @@ body {
     padding-top: 30px;
   }
   .section3 .section3Container .section3Columns .viewPairsButtonMobileContainer .viewPairsButtonMobile {
+    display: block;
     background: linear-gradient(rgb(252, 198, 49) 0%, rgb(255, 157, 0) 100%);
     border-radius: 16px;
     font-size: 16px;

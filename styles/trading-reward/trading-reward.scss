@@ -509,6 +509,11 @@ body {
                     }
                 }
             }
+            .viewPairsButtonMobileContainer{
+                button {
+                    display: none;
+                }
+            }
         }
         .section3AbsoluteImages {
             img:nth-child(1) {
@@ -801,6 +806,7 @@ body {
                     justify-content: center;
                     padding-top: 30px;
                     .viewPairsButtonMobile {
+                        display: block;
                         background: linear-gradient(rgb(252, 198, 49) 0%, rgb(255, 157, 0) 100%);
                         border-radius: 16px;
                         font-size: 16px;
@@ -999,7 +1005,7 @@ body {
                 align-items: center; 
                 text-align: center;
                 padding: 0 20px; 
-                
+
             }
         }
     }
