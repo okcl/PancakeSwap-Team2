@@ -1,0 +1,84 @@
+#part-8 {
+  color: var(--colors-white);
+  background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+}
+#part-8 .main-content-wrapper {
+  padding: 0 1.5rem;
+  width: 100%;
+  background-image: url(./public/svgexport-35.svg);
+  background-position: center;
+}
+#part-8 .main-content-wrapper .main-content {
+  padding: 3rem 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#part-8 .main-content-wrapper .main-content .animated-imgs-wrapper {
+  order: 0;
+  max-width: 256px;
+  max-height: 256px;
+  position: absolute;
+}
+#part-8 .main-content-wrapper .main-content .animated-imgs-wrapper:first-of-type {
+  top: 0;
+  left: 0;
+}
+#part-8 .main-content-wrapper .main-content .animated-imgs-wrapper:last-of-type {
+  bottom: 0;
+  right: 0;
+}
+#part-8 .main-content-wrapper .main-content .animated-imgs-wrapper .animated-imgs, #part-8 .main-content-wrapper .main-content .animated-imgs-wrapper .animated-img {
+  max-width: inherit;
+  max-height: inherit;
+}
+#part-8 .main-content-wrapper .main-content .main-text {
+  padding: 3rem 0;
+  max-width: 968px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#part-8 .main-content-wrapper .main-content .main-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+#part-8 .main-content-wrapper .main-content .main-text p:last-of-type {
+  margin-bottom: 1.25rem;
+}
+#part-8 .main-content-wrapper .main-content .main-text a {
+  color: var(--colors-primary);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+#part-8 .main-content-wrapper .main-content .main-text a:hover {
+  text-decoration: underline;
+}
+#part-8 .main-content-wrapper .main-content .main-text button {
+  background-color: var(--colors-primary);
+  color: var(--colors-white);
+  border: 0;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+}
+#part-8 .main-content-wrapper .main-content .main-text button:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  #part-8 .animated-imgs-wrapper {
+    display: none;
+  }
+}/*# sourceMappingURL=part-8.css.map */
