@@ -1471,4 +1471,215 @@ input:checked + .slider:before {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+}
+.pools .main .content .controlboard {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content .controlboard {
+    flex-flow: row wrap;
+    padding: 16px 32px;
+    margin-bottom: 0px;
+  }
+}
+.pools .main .content .controlboard .cbuttons {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content .controlboard .cbuttons {
+    justify-content: flex-start;
+    width: auto;
+  }
+}
+.pools .main .content .controlboard .cbuttons .viewstyle-buttons button {
+  padding: 2px;
+}
+.pools .main .content .controlboard .cbuttons .viewstyle-buttons button:hover {
+  opacity: 0.65;
+}
+.pools .main .content .controlboard .cbuttons .list-switch-w {
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 576px) {
+  .pools .main .content .controlboard .cbuttons .list-switch-w {
+    padding: 0px;
+    margin-left: 16px;
+    display: flex;
+  }
+}
+.pools .main .content .controlboard .cbuttons .list-switch-w .list-switch {
+  background-color: var(--colors-input);
+  border-radius: 16px;
+  display: inline-flex;
+  border: 1px solid var(--colors-inputSecondary);
+  width: auto;
+}
+.pools .main .content .controlboard .cbuttons .list-switch-w .list-switch a {
+  box-shadow: none;
+  flex: 1 1 auto;
+  position: relative;
+  align-items: center;
+  border: 0px none;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: var(--colors-textSubtle);
+  color: var(--colors-backgroundAlt);
+  text-decoration: none;
+}
+.pools .main .content .controlboard .cbuttons .list-switch-w .list-switch #unselected-a {
+  background-color: transparent;
+  color: var(--colors-textSubtle);
+  box-shadow: none;
+}
+.pools .main .content .controlboard .cbuttons .list-switch-w .list-switch span {
+  display: inline-flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.pools .main .content .controlboard .cbuttons .list-switch-w .list-switch a:hover {
+  opacity: 0.65;
+}
+.pools .main .content .controlboard .cbuttons .isstaked {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .switch input {
+  display: none;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+.pools .main .content .controlboard .cbuttons .isstaked input:checked + .slider {
+  background-color: #66bb6a;
+}
+.pools .main .content .controlboard .cbuttons .isstaked input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.pools .main .content .controlboard .cbuttons .isstaked .slider.round {
+  border-radius: 34px;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .slider.round:before {
+  border-radius: 50%;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox {
+  align-items: center;
+  background-color: var(--colors-input);
+  border-radius: 20px;
+  box-shadow: var(--shadows-inset);
+  cursor: pointer;
+  display: inline-flex;
+  height: 23px;
+  position: relative;
+  transition: background-color 200ms ease 0s;
+  width: 40px;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox #stake-checkbox {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox .sliderrround {
+  background-color: var(--colors-backgroundAlt);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 13px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  transition: left 150ms ease-in 0s;
+  width: 13px;
+  z-index: 1;
+  padding-top: 1px;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox .sliderr:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 16px;
+}
+.pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox #stake-checkbox:checked + .sliderr:before {
+  transform: translateX(16px);
+}
+.pools .main .content .controlboard .cbuttons .isstaked .stake-checkbox .sliderr.round:before {
+  border-radius: 50%;
+}
+
+button {
+  position: relative;
+  align-items: center;
+  border: 0px none;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 32px;
+  padding: 0px 16px;
+  background-color: transparent;
+  color: var(--colors-primary);
+  box-shadow: none;
 }/*# sourceMappingURL=pools.css.map */
