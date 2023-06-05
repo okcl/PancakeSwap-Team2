@@ -15,6 +15,53 @@
     @media screen and (min-width: 852px) {
         min-height: 100vh;
     }
+    .nav {
+      nav{
+          .nav1 {
+              .nav-menu {
+                  .nav-win {
+                      .link{
+                          display: flex;
+                          align-items: center;
+                          
+                      }
+                      #winLink a{
+                          color: var(--colors-secondary);
+                          font-weight: 600;
+                      }
+                      #winLink{
+                          ::after{
+                          content: "";
+                          background: var(--colors-failure);
+                          height: 8px;
+                          width: 8px;
+                          border-radius: 100%;
+                          margin-left: 12px;
+                          }
+                      }
+                      .down-menu {
+                          .tradingRewardLink {
+                              a {
+                                  color: var(--colors-secondary);
+                                  font-weight:  600;
+                                  div {
+                                      color: var(--colors-failure);
+                                      border: solid 2px var(--colors-failure);
+                                      border-radius: 25px;
+                                      padding: 0 5px;
+                                      line-height: 1.2;
+                                      font-size: 15px;
+                                      font-weight: 400;
+                                  }
+                              }
+                              
+                          }
+                      }
+                  }
+              }
+          }
+      }
+    }
     .earn-nav{
         display: flex;
         justify-content: space-around;
