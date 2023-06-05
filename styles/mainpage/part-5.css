@@ -1,0 +1,116 @@
+.flex5 {
+  padding: 0 3rem 2rem 2rem;
+  display: flex;
+  max-width: 968px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 4rem;
+}
+.flex5 div {
+  width: 100%;
+}
+.flex5 div .part5 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  width: 100%;
+}
+.flex5 div .part5 .title5 {
+  height: 28px;
+  display: flex;
+  margin-bottom: 24px;
+}
+.flex5 div .part5 .title5 h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--color-text);
+}
+.flex5 div .part5 .title5 .switch5 {
+  padding: 2px;
+  width: 48px;
+  position: relative;
+  align-items: center;
+  border: 0px none;
+  border-radius: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: transparent;
+  color: var(--colors-primary);
+  box-shadow: none;
+  height: 100%;
+}
+.flex5 div .part5 .title5 .switch5:hover {
+  opacity: 60%;
+}
+.flex5 div .part5 .content5 {
+  height: 80px;
+}
+@media screen and (max-width: 576px) {
+  .flex5 div .part5 .content5 {
+    height: 240px;
+  }
+}
+.flex5 div .part5 .content5 .farms {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 32px;
+}
+@media screen and (max-width: 576px) {
+  .flex5 div .part5 .content5 .farms {
+    grid-template-columns: repeat(2, auto);
+    height: 100%;
+  }
+}
+.flex5 div .part5 .content5 .farms .farmsg {
+  display: flex;
+  position: relative;
+}
+.flex5 div .part5 .content5 .farms .farmsg .farmsg-box, .flex5 div .part5 .content5 .farms .farmsg .farmsg-boxb {
+  position: absolute;
+  top: 0px;
+  opacity: 1;
+  margin-top: 0px;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+  flex-direction: column;
+  padding-left: 16px;
+}
+.flex5 div .part5 .content5 .farms .farmsg .farmsg-box .fgbox-top, .flex5 div .part5 .content5 .farms .farmsg .farmsg-boxb .fgbox-top {
+  height: 30px;
+  color: var(--colors-secondary);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.flex5 div .part5 .content5 .farms .farmsg .farmsg-box .fgbox-mid, .flex5 div .part5 .content5 .farms .farmsg .farmsg-boxb .fgbox-mid {
+  gap: 4px;
+  display: flex;
+}
+.flex5 div .part5 .content5 .farms .farmsg .farmsg-box .fgbox-mid .fxbox-mid-wrap, .flex5 div .part5 .content5 .farms .farmsg .farmsg-boxb .fgbox-mid .fxbox-mid-wrap {
+  text-decoration: none;
+  color: #280d5f;
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 16px;
+}
+.flex5 div .part5 .content5 .farms .farmsg .farmsg-box .fgbox-bot, .flex5 div .part5 .content5 .farms .farmsg .farmsg-boxb .fgbox-bot {
+  color: var(--colors-textSubtle);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+@media screen and (min-width: 576px) {
+  .flex5 div .part5 .content5 .farms .farmsg .farmsg-boxb {
+    border-left: 1px var(--colors-inputSecondary) solid;
+  }
+}/*# sourceMappingURL=part-5.css.map */
