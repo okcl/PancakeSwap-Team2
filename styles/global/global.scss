@@ -1,0 +1,134 @@
+/*GLOBALS*/
+
+    /*LINK TO FONT-FAMILY*/
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;900&display=swap');
+
+    /*Add here any global styles*/
+
+/* NORMALIZING HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    a{
+        text-decoration: none;
+    }
+    -webkit-font-smoothing: antialiased;
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--colors-textSubtle);
+        border-radius: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px var(--colors-input);
+        border-radius: 10px;
+    }
+}
+body {
+    position: relative;
+    z-index: -5;
+}
+:root {
+    --colors-light-white: #fff;
+    --colors-light-failure: #ed4b9e;
+    --colors-light-failure33: #ed4b9e33;
+    --colors-light-primary: #1fc7d4;
+    --colors-light-primary0f: #1fc7d40f;
+    --colors-light-primary3D: #1fc7d43d;
+    --colors-light-primaryBright: #53dee9;
+    --colors-light-primaryDark: #0098a1;
+    --colors-light-success: #31d0aa;
+    --colors-light-success19: #31d0aa19;
+    --colors-light-warning: #ffb237;
+    --colors-light-warning2D: #ed4b9e2d;
+    --colors-light-warning33: #ed4b9e33;
+    --colors-light-binance: #f0b90b;
+    --colors-light-overlay: #452a7a;
+    --colors-light-gold: #ffc700;
+    --colors-light-silver: #b2b2b2;
+    --colors-light-bronze: #e7974d;
+    --colors-light-secondary: #7645d9;
+    --colors-light-secondary80: #7645d980;
+    --colors-light-background: #faf9fa;
+    --colors-light-backgroundDisabled: #e9eaeb;
+    --colors-light-backgroundAlt: #fff;
+    --colors-light-backgroundAlt2: hsla(0,0%,100%,.7);
+    --colors-light-cardBorder: #e7e3eb;
+    --colors-light-contrast: #191326;
+    --colors-light-dropdown: #f6f6f6;
+    --colors-light-dropdownDeep: #eee;
+    --colors-light-invertedContrast: #fff;
+    --colors-light-input: #eeeaf4;
+    --colors-light-inputSecondary: #d7caec;
+    --colors-light-tertiary: #eff4f5;
+    --colors-light-text: #280d5f;
+    --colors-light-text99: #280d5f99;
+    --colors-light-textDisabled: #bdc2c4;
+    --colors-light-textSubtle: #7a6eaa;
+    --colors-light-disabled: #e9eaeb;
+    --colors-light-gradientBubblegum: linear-gradient(139.73deg,#e5fdff,#f3efff);
+    --colors-light-gradientInverseBubblegum: linear-gradient(139.73deg,#f3efff,#e5fdff);
+    --colors-light-gradientCardHeader: linear-gradient(111.68deg,#f2ecf2,#e8f2f6);
+    --colors-light-gradientBlue: linear-gradient(180deg,#a7e8f1,#94e1f2);
+    --colors-light-gradientViolet: linear-gradient(180deg,#e2c9fb,#cdb8fa);
+    --colors-light-gradientVioletAlt: linear-gradient(180deg,#cbd7ef,#9a9fd0);
+    --colors-light-gradientGold: linear-gradient(180deg,#ffd800,#fdab32);
+    --colors-light-gradientBold: linear-gradient(#53dee9,#7645d9);
+    --colors-dark-white: #fff;
+    --colors-dark-failure: #ed4b9e;
+    --colors-dark-failure33: #ed4b9e33;
+    --colors-dark-primary: #1fc7d4;
+    --colors-dark-primary0f: #1fc7d40f;
+    --colors-white: #fff;
+    --colors-failure: #ed4b9e;
+    --colors-failure33: #ed4b9e33;
+    --colors-primary: #1fc7d4;
+    --colors-primary0f: #1fc7d40f;
+    --colors-primary3D: #1fc7d43d;
+    --colors-primaryBright: #53dee9;
+    --colors-primaryDark: #0098a1;
+    --colors-success: #31d0aa;
+    --colors-success19: #31d0aa19;
+    --colors-warning: #ffb237;
+    --colors-warning2D: #ed4b9e2d;
+    --colors-warning33: #ed4b9e33;
+    --colors-binance: #f0b90b;
+    --colors-overlay: #452a7a;
+    --colors-gold: #ffc700;
+    --colors-silver: #b2b2b2;
+    --colors-bronze: #e7974d;
+    --colors-secondary: #7645d9;
+    --colors-secondary80: #7645d980;
+    --colors-background: #faf9fa;
+    --colors-backgroundDisabled: #e9eaeb;
+    --colors-backgroundAlt: #fff;
+    --colors-backgroundAlt2: hsla(0,0%,100%,.7);
+    --colors-cardBorder: #e7e3eb;
+    --colors-contrast: #191326;
+    --colors-dropdown: #f6f6f6;
+    --colors-dropdownDeep: #eee;
+    --colors-invertedContrast: #fff;
+    --colors-input: #eeeaf4;
+    --colors-inputSecondary: #d7caec;
+    --colors-tertiary: #eff4f5;
+    --colors-text: #280d5f;
+    --colors-text99: #280d5f99;
+    --colors-textDisabled: #bdc2c4;
+    --colors-textSubtle: #7a6eaa;
+    --colors-disabled: #e9eaeb;
+    --colors-gradientBubblegum: linear-gradient(139.73deg,#e5fdff,#f3efff);
+    --colors-gradientInverseBubblegum: linear-gradient(139.73deg,#f3efff,#e5fdff);
+    --colors-gradientCardHeader: linear-gradient(111.68deg,#f2ecf2,#e8f2f6);
+    --colors-gradientBlue: linear-gradient(180deg,#a7e8f1,#94e1f2);
+    --colors-gradientViolet: linear-gradient(180deg,#e2c9fb,#cdb8fa);
+    --colors-gradientVioletAlt: linear-gradient(180deg,#cbd7ef,#9a9fd0);
+    --colors-gradientGold: linear-gradient(180deg,#ffd800,#fdab32);
+    --colors-gradientBold: linear-gradient(#53dee9,#7645d9);
+    --radii-small: 4px;
+    --radii-default: 16px;
+    --radii-card: 24px;
+    --radii-circle: 50%;
+}

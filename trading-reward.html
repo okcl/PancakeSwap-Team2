@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Reward</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="nav">
+        <nav>
+            <div class="nav1">
+                <div class="nav-logo">
+                  <a href="./main.html">
+                    <img class="logo" src="./public/svgexport-3.svg" alt="" style="width: 160px;"/>
+                    <img class="logo-mobile" src="./public/svgexport-2.svg" alt=""/>
+                  </a>
+                </div>
+                <div class="nav-menu">
+                    <div class="nav-trade">
+                        <div class="link"><a href="#">Trade</a></div>
+                        <div class="down-menu">
+                            <div><a href="#">Swap</a></div>
+                            <div><a href="#">Limit</a></div>
+                            <div><a href="#">Liquidity</a></div>
+                            <div><a href="#">Perpetual</a></div>
+                            <div><a href="#">Bridge</a></div>
+                            <div><a href="#">Limit (V2)</a></div>
+                        </div>
+                    </div>
+                    <div class="nav-earn">
+                      <div class="link"><a href="#">Earn</a></div>
+                      <div class="down-menu">
+                        <div><a href="#">Farms</a></div>
+                        <div><a href="./pools.html">Pools</a></div>
+                      </div>
+                    </div>
+                    <div class="nav-win">
+                      <div id="winLink" class="link"><a href="#">Win</a></div>
+                      <div class="down-menu">
+                        <div class="tradingRewardLink"><a href="./trading-reward.html">Trading Reward
+                            <div>
+                                LIVE
+                            </div>
+                        </a></div>
+                        <div><a href="#">Trading Competition</a></div>
+                        <div><a href="#">Prediction (BETA)</a></div>
+                        <div><a href="./lottery.html">Lottery</a></div>
+                        <div><a href="#">Pottery (BETA)</a></div>
+                      </div>
+                    </div>
+                    <div class="nav-nft">
+                      <div class="link"><a href="#">NFT</a></div>
+                      <div class="down-menu">
+                        <div><a href="#">Overview</a></div>
+                        <div><a href="#">Collections</a></div>
+                        <div><a href="#">Activity</a></div>
+                      </div>
+                    </div>
+                    <div class="nav-extra">
+                        <div class="link">
+                          <a href="#">
+                            <img src="./public/svgexport-5.svg" alt="" />
+                          </a>
+                        </div>
+                        <div class="down-menu">
+                            <div><a href="#">Info</a></div>
+                            <div><a href="#">IFO</a></div>
+                            <div><a href="#">Affiliate Program</a></div>
+                            <div><a href="#">Voting</a></div>
+                            <div><a href="#">Leaderboard</a></div>
+                            <div><a href="#">Blog</a></div>
+                            <div><a href="#">Docs</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav2">
+                <div class="nav-currentprice">
+                  <a href="#">
+                    <img src="./public/svgexport-6.svg" alt="" style="width: 24px;"/>
+                    <div class="text-currency">$3.657</div>
+                  </a>
+                </div>
+                <div class="nav-language">
+                    <div class="nav-lang">
+                        <button class="lang-select-btn">
+                            <img src="./public/svgexport-7.svg" alt="" style="width: 24px;"/>
+                        </button>
+                        <div class="lang-down-menu">
+                            <button class="lang-item">English</button>
+                            <button class="lang-item">Deutsch</button>
+                            <button class="lang-item">Espanol</button>
+                            <button class="lang-item">Français</button>
+                            <button class="lang-item">Polski</button>
+                            <button class="lang-item">Türkçe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-settings">
+                    <button>
+                        <img src="./public/svgexport-8.svg" alt="" style="width: 24px;"/>
+                    </button>
+                </div>
+                <div class="nav-network">
+                    <div class="network-select-link">
+                        <div class="link-img">
+                        <img src="./public/bnb.png" alt="" />
+                        </div>
+                        <div class="link-text">
+                        <div class="link-text-desktop">BNB Smart Chain</div>
+                        <div class="link-text-mobile" style="display: none;">BNB</div>
+                        </div>
+                        <img src="./public/svgexport-9.svg" alt="" />
+                    </div>
+                    <div class="network-select-content">
+                        <div class="network-select-text">
+                            <div class="select-network-txt">Select a Network</div>
+                        </div>
+                        <hr />
+                        <button class="active">
+                            <img src="./public/bnb.png" alt="" />
+                            <div class="btn-text">BNB Smart Chain</div>
+                        </button>
+                        <button>
+                            <img src="./public/eth.png" alt="" />
+                            <div class="btn-text">Etherium</div>
+                        </button>
+                        <button>
+                            <img src="./public/apt.png" alt="" />
+                            <div class="btn-text">Aptos</div>
+                        </button>
+                    </div>
+                </div>
+                <button class="nav-connect">
+                    <div class="connect-btn">Connect Wallet</div>
+                    <div class="connect-btn-mobile">Connect</div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- End of navbar-->
+    <!--  -->
+    
+    <!-- --------------- Toolbar ----------------- -->
+    <section class="toolbar">
+        <div class="toolbarItemSelected">
+            <a href="#">Trading Reward</a>
+        </div>
+        <div class="toolbarItem">
+            <a href="#">Trading Competition</a>
+        </div>
+        <div class="toolbarItem">
+            <a href="#">Prediction (BETA)</a>
+        </div>
+        <div class="toolbarItem">
+            <a href="./lottery/lottery.html">Lottery</a>
+        </div>
+        <div class="toolbarItem">
+            <a href="#">Pottery (BETA)</a>
+        </div>
+    </section>
+
+    <!-- ---------------- Section 1 --------------- -->
+    <section class="section1">
+        <div class="section1MovingParts">
+            <img src="./public/trading-reward-star1.png" alt="star1">
+            <img src="./public/trading-reward-star2.png" alt="star2">
+            <img src="./public/trading-reward-star3.png" alt="star3">
+            <img src="./public/trading-reward-butter-1.png" alt="butter1">
+            <img src="./public/trading-reward-butter-2.png" alt="butter-2">
+        </div>
+        <div class="section1Container">
+            
+            <div class="section1Left">
+                <div>Trading Reward</div>
+                <div>5% trading rebate to be earned!</div>
+                <div>Earn CAKE while trading your favorite tokens on PancakeSwap.</div>
+                <div>
+                    <a href="#">
+                        Start Trading
+                    </a>
+                    <a href="#">
+                        How to Earn
+                    </a>
+                </div>
+            </div>
+            <div class="section1Right">
+                <div class="section1RightImage">
+                    <img src="./public/trading-reward-banner-bunny.webp" alt="trading reward banner bunny">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- --------------- Section 2 -------------- -->
+    <section class="section2">
+        <div class="section2Container">
+            <h2 id="yourTradingReward">Your Trading Reward</h2>
+            <div class="section2BannerContainer">
+                <div class="section2Banner">
+                    <h2>Connect wallet to view your trading volume and rewards</h2>
+                    <button>Connect Wallet</button>
+                </div>
+            </div>
+            <div class="section2FloatingImages">
+                <img class="left-bunny" src="./public/trading-reward-left-bunny.png" alt="left bunny">
+                <img class="right-bunny" src="./public/trading-reward-right-bunny.png" alt="right bunny">
+                <img class="love-butter" src="./public/trading-reward-love-butter.png" alt="love butter">
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- --------------- Section 3 -------------- -->
+    <section class="section3">
+        <div class="section3Container">
+            <h2 class="section3Title">Current Reward Pool</h2>
+            <div class="section3Columns">
+                <div class="section3ColumnItem">
+                    <h2>Starts</h2>
+                    <h2>On May 18, 2023, 07:00</h2>
+                </div >
+                <div class="section3ColumnItem">
+                    <h2>Ends</h2>
+                    <h2>in 23d 5h 0m</h2>
+                </div>
+                <div class="section3ColumnItem">
+                    <h2>Total volume generated</h2>
+                    <h2>$16,715,421.900</h2>
+                </div>
+                <div class="section3ColumnItem">
+                    <h2>Total reward to distribute</h2>
+                    <h2>207 in CAKE</h2>
+                </div>
+                <div class="section3ColumnItem">
+                    <h2>Number of eligible pairs</h2>
+                    <div class="viewPairs">
+                        <h2>18</h2>
+                        <button class="viewPairsButton">View Pairs</button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="viewPairsButtonMobileContainer">
+                    <button class="viewPairsButtonMobile">View Pairs</button>
+                </div>
+            </div>
+            <div class="section3AbsoluteImages">
+                <img src="./public/trading-reward-pool-1.png" alt="pool-1">
+                <img src="./public/trading-reward-pool-2.png" alt="pool-2">
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------- Section 4 -------------- -->
+    <section class="section4">
+        <div class="section4ContainerShadow">
+            <div class="section4Container">
+                <h2>How to Earn</h2>
+                <div class="section4Cards">
+                    <div class="card">
+                        <div class="section4CardTop">
+                            <p>Step 1</p>
+                            <img src="./public/trading-reward-step1-1.webp" alt="step-1">
+                        </div>
+                        <h2>Look for eligible pairs</h2>
+                        <p>Use the hot token list on the Swap page to check which pairs are eligible for trading rewards.</p>
+                    </div>
+                    <div class="card">
+                        <div class="section4CardTop">
+                            <p>Step 2</p>
+                            <img src="./public/trading-reward-step2-1.webp" alt="step-2">
+                        </div>
+                        <h2>Start trading</h2>
+                        <p>Start trading any eligible pairs to earn rewards in CAKE. The more you trade, the more rewards you will earn from the current reward pool</p>
+                    </div>
+                    <div class="card">
+                        <div class="section4CardTop">
+                            <p>Step 3</p>
+                            <img src="./public/trading-reward-step3-1.webp" alt="step-3">
+                        </div>
+                        <h2>Track your volume and rewards</h2>
+                        <p>Come back on this page to check your volume and rewards in real time.</p>
+                    </div>
+                    <div class="card">
+                        <div class="section4CardTop">
+                            <p>Step 4</p>
+                            <img src="./public/trading-reward-step4-1.webp" alt="step-4">
+                        </div>
+                        <h2>Claim your rewards</h2>
+                        <p>After each period ends, come back to this page and claim your rewards from the previous periods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section4LearnMore">
+            <button >
+                <span>Learn More</span>
+                <svg viewBox="0 0 24 24" color="primary" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-231a1e38-0 jCMRod"><path d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"></path></svg>
+            </button>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <!-- Part 9-->
+            <div id="links-footer">
+                <div class="about">
+                    <h4>About</h4>
+                    <a href="#"><strong class="yellow">Contact</strong></a>
+                    <a href="#">Brand</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Community</a>
+                    <a href="#">Litepaper</a>
+                </div>
+                <div class="help">
+                    <h4>Help</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Troubleshooting</a>
+                    <a href="#">Guides</a>
+                </div>
+                <div class="developers">
+                    <h4>Developers</h4>
+                    <a href="#">Github</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Bug Bounty</a>
+                    <a href="#">Audits</a>
+                    <a href="#">Careers</a>
+                </div>
+                <img class="desktop" src="./public/svgexport-36.svg" width="160px" alt="Pancake Swap Logo">
+            </div>
+            <img class="mobile" src="./public/svgexport-36.svg" width="160px" alt="Pancake Swap Logo">
+            <!-- Part 10-->
+            
+            <div class="icons-footer">
+                <a href="#"><img src="./public/svgexport-38.svg" alt="Twitter"></a>
+                <div class="telegram"><a href="#"><img src="./public/svgexport-39.svg" alt="Telegram"></a>
+                    <div class="tele-lang">
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswap">English</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeSwap_DE">Deutsch</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeswapEs">Español</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswapfr">Français</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeSwapPortuguese">Português</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswapturkiye">Türkçe</a></button>
+                    </div>
+                </div>
+                <a href="#"><img src="./public/svgexport-40.svg" alt="Reddit"></a>
+                <a href="#"><img src="./public/svgexport-41.svg" alt="Instagram"></a>
+                <a href="#"><img src="./public/svgexport-42.svg" alt="Github"></a>
+                <a href="#"><img src="./public/svgexport-43.svg" alt="Discord"></a>
+                <a href="#"><img src="./public/svgexport-44.svg" alt="Youtube"></a>        
+            </div>
+
+            <div class="buttons-footer">
+
+                <div class="buttons-footer-left">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+
+                    <div class="lang-select">
+                        <button class="lang-select-btn">
+                            <img src="./public/svgexport-7.svg" alt="">
+                            <div>EN</div>
+                        </button>
+                        <div class="lang-select-content">
+                            <button class="lang-item">English</button>
+                            <button class="lang-item">Deutsch</button>
+                            <button class="lang-item">Espanol</button>
+                            <button class="lang-item">Français</button>
+                            <button class="lang-item">Português</button>
+                            <button class="lang-item">Türkçe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-footer-right">
+                    <div class="currency-price">
+                        <a href="#">
+                            <img src="./public/svgexport-6.svg" alt="" style="width: 24px;">
+                            <div class="text-currency">$3.657</div>
+                        </a>
+                    </div>
+                    <a href="#" class="buy-btn">Buy CAKE <img src="./public/svgexport-10.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+       </footer>
+    <div class="go-top-container">
+        <button class="go-top">
+            <a href="#"><img src="./public/svgexport-57.svg" alt="arrow-up"></a>
+        </button>
+    </div>
+
+<div class="mobile-nav-wrap">
+    <div class="mobile-nav">
+        <div class="mbnav-el">
+            <div class="mbnav-btn">
+                <div class="mbnav-btn">
+                    <span>
+                        <a href="" style="opacity: 1;">
+                            <div class="mnav-btn-cntnt" height="100%">
+                                <div class="mnbc-svg"><img src="./public/svgexport-49.svg" alt="" /></div>
+                                <div class="mnbc-txt">Trade</div>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                <div class="mnli-el">
+                    <a href="#">
+                        Swap
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Liquidity
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Perpetual
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Bridge
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Limit (V2)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mbnav-el">
+            <div class="mbnav-btn">
+                <div class="mbnav-btn">
+                    <span>
+                        <a href="" style="opacity: 1;">
+                            <div class="mnav-btn-cntnt">
+                                <div class="mnbc-svg"><img src="./public/svgexport-51.svg" alt="" /></div>
+                                <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px">Earn</div>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                <div class="mnli-el">
+                    <a href="#">
+                        Farms
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Pools
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mbnav-el">
+            <div class="mbnav-btn">
+                <div class="mbnav-btn">
+                    <span>
+                        <a href="" style="opacity: 1;">
+                            <div class="mnav-btn-cntnt">
+                                <div class="mnbc-svg"><img src="./public/svgexport-53.svg" alt="" style="width: 20px; height: 18px; margin-top: 3px;"/></div>
+                                <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px">Win</div>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                <div class="mnli-el">
+                    <a href="#">
+                        Trading Competition
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Prediction (BETA)
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Lottery
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Pottery (BETA)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mbnav-el">
+            <div class="mbnav-btn">
+                <div class="mbnav-btn">
+                    <span>
+                        <a href="" style="opacity: 1;">
+                            <div class="mnav-btn-cntnt">
+                                <div class="mnbc-svg"><img src="./public/svgexport-55.svg" alt=""/></div>
+                                <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px" style="margin-left: 4px;">NFT</div>
+                            </div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                <div class="mnli-el">
+                    <a href="#">
+                        Overview
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Collections
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Activity
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mbnav-el">
+            <div class="mbnav-btn">
+                <div class="mbnav-btn">
+                    <span>
+                        <a href="" style="opacity: 1; margin-top: 4px;">
+                            <div class="mnav-btn-cntnt" height="100%">
+                                <div class="mnbc-svg" height="22px" width="21px"><img src="./public/svgexport-5.svg" alt="" style="margin-top: 5px;"/></div>
+                            </div>
+                        </a>
+                        <span class="mbnav-success"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="mbnav-list">
+                <div class="mnli-el">
+                    <a href="#">
+                        Info
+                        <div class="mnli-el-new">New</div>
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        IFO
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Affiliate Program
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Voting
+                        <div class="mnli-el-new">Vote Now</div>
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Leaderboard
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Blog
+                    </a>
+                </div>
+                <div class="mnli-el">
+                    <a href="#">
+                        Docs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+
+
+</html>

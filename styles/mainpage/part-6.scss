@@ -1,0 +1,553 @@
+
+#part-6 {
+    background: -webkit-linear-gradient(top,#6fb6f1 0%,#eaf2f6 100%);
+    background: -moz-linear-gradient(top,#6fb6f1 0%,#eaf2f6 100%);
+    background: -o-linear-gradient(top,#6fb6f1 0%,#eaf2f6 100%);
+    background: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
+    overflow: hidden;
+    
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+
+    padding: 48px 0px;
+    display: flex;
+    .main-part-6 {
+        max-width: 968px;
+        width: 100%;
+        .background-images-part-6 {
+            .lower-corner {
+                
+                div {
+                    z-index: -1;
+                    position: absolute;
+                    left: 0px;
+                    bottom: -64px;
+                    height: 512px;
+                    display: block;
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                        height: auto;
+                        width: auto;
+                    }
+                }
+                div:nth-child(1) {
+                    animation: 3s ease-in-out 1s infinite normal none running cake-card;
+                    // ↓ ANIMATIONS ↓
+                }
+                @keyframes cake-card {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(3px, 15px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    }
+                }
+                div:nth-child(2) {
+                    animation: 3s ease-in-out 0.66s infinite normal none running green-arrow-card;
+                }
+                @keyframes green-arrow-card {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(5px, 10px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    } 
+                }
+                div:nth-child(3) {
+                    animation: 3s ease-in-out 0.33s infinite normal none running pink-arrow-card;
+                }
+                @keyframes pink-arrow-card {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(6px, 5px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    }
+                }
+                div:nth-child(4) {
+                    animation: 3s ease-in-out 0s infinite normal none running cake-card-2;
+                }
+                @keyframes cake-card-2 {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(4px, 12px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    }
+                }
+            }
+            .upper-corner {
+                
+                div {
+                    z-index: -1;
+                    position: absolute;
+                    right: 0px;
+                    top: -64px;
+                    height: 512px;
+                    display: block;
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                        height: auto;
+                        width: auto;
+                    }
+                }
+                // ↓ ANIMATIONS ↓
+                div:nth-child(1) {
+                    animation: 3s ease-in-out 1s infinite normal none running ball-2;
+                }
+                @keyframes ball-2 {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(3px, 15px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    }
+                }
+                div:nth-child(2) {
+                    animation: 3s ease-in-out 0.66s infinite normal none running ball-4;
+                }
+                @keyframes ball-4 {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(5px, 10px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    }
+                }
+                div:nth-child(3) {
+                    animation: 3s ease-in-out 0.33s infinite normal none running ball-6;
+                }
+                @keyframes ball-6 {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(6px, 5px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    }
+                }
+                div:nth-child(4) {
+                    animation: 3s ease-in-out 0s infinite normal none running ball-7
+                }
+                @keyframes ball-7 {
+                    0% {
+                        transform: translate(0px, 0px);
+                    }
+                    50% {
+                        transform: translate(4px, 12px);
+                    }
+                    100% {
+                        transform: translate(0px, 0px);
+                    }
+                }
+                
+            }
+            .part-6-banner {
+                background: rgba(255, 255, 255, 0.6);
+                padding: 16px;
+                border: 1px solid var(--colors-cardBorder);
+                box-sizing: border-box;
+                backdrop-filter: blur(12px);
+                border-radius: 72px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                margin: 48px 15px 48px 15px;
+                
+                h2 {
+                    font-size: 40px;
+                    color: var(--colors-text);
+                    margin-bottom: 24px;
+                    text-align: center;
+                    span {
+                        color: var(--colors-secondary);
+                        font-weight: 600;
+                        line-height: 1.1;
+                        font-size: 100%;
+                    }
+                }
+                div:nth-child(2) {
+                    color: var(--colors-textSubtle);
+                    font-weight: 400;
+                    line-height: 1.5;
+                    font-size: 16px;
+                }
+                div:nth-child(3) {
+                    color: var(--colors-textSubtle);
+                    font-weight: 400;
+                    line-height: 1.5;
+                    margin-bottom: 40px;
+                    font-size: 16px;
+                
+                }
+                div:nth-child(4) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    width: 600px;
+                    margin: 0px auto;
+                    
+                    .card-left-container {
+                        display: flex;
+                        flex: 1;
+                        margin-right: 24px;
+                        margin-bottom: 0px;
+                        max-width: 50%;
+                        .card-left-shadow {
+                            transform: rotate(-2.36deg);
+                            background: rgb(255, 178, 55);
+                            border-radius: var(--radii-card);
+                            color: var(--colors-text);
+                            overflow: hidden;
+                            position: relative;
+                            height: fit-content;
+                            padding: 1px 1px 4px;
+                            box-sizing: border-box;
+                            .card-left {
+                                background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+                                border-radius: var(--radii-card);
+                                padding: 24px;
+                                .svg-card-left {
+                                    transform: rotate(-2.36deg);
+                                    position: absolute;
+                                    top: 24px;
+                                    right: 24px
+                                }
+                                .card-left-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-top: 48px;
+                                    div:nth-child(1) {
+                                        color: rgb(40, 13, 95);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        font-size: 16px;
+                                    }
+                                    
+                                    h2 {
+                                        font-size: 40px;
+                                        font-weight: 600;
+                                        line-height: 1.1;
+                                        margin-top: 8px;
+                                        margin-bottom: 8px;
+                                        text-align: start;
+                                    }
+                                    div:nth-child(3) {
+                                        color: rgb(40, 13, 95);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        margin-bottom: 24px;
+                                        font-size: 16px;
+                                    }
+                                    div:nth-child(4) {
+                                        color: rgb(40, 13, 95);
+                                        font-weight: 400;
+                                        line-height: 1.5;
+                                        margin-bottom: 40px;
+                                        font-size: 16px;  
+                                        width: 100%; 
+                                    }
+                                }
+                                .card-left-button {
+                                    display: flex;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    -webkit-box-pack: center;
+                                    justify-content: center;
+                                    margin: 0;
+                                    a {
+                                        width: 100%;
+                                        color: inherit;
+                                        text-decoration: none;
+                                        button {
+                                            position: relative;
+                                            -webkit-box-align: center;
+                                            align-items: center;
+                                            border: 0px;
+                                            border-radius: 16px;
+                                            box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                                            cursor: pointer;
+                                            display: inline-flex;
+                                            font-family: inherit;
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            -webkit-box-pack: center;
+                                            justify-content: center;
+                                            letter-spacing: 0.03em;
+                                            line-height: 1;
+                                            opacity: 1;
+                                            outline: 0px;
+                                            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                            height: 48px;
+                                            padding: 0px 24px;
+                                            background-color: var(--colors-primary);
+                                            color: var(--colors-invertedContrast);
+                                            width: 100%;
+                                            &:hover{
+                                                background-color: #328eca;
+                                                div {
+                                                    color: #c4b3e6;
+                                                }
+                                                svg {
+                                                    fill: #c4b3e6;
+                                                }
+                                            }
+                                            div {
+                                                color: var(--colors-invertedContrast);
+                                                font-weight: 600;
+                                                line-height: 1.5;
+                                                font-size: 16px;
+                                                transition: color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                            }
+                                            svg {
+                                                align-self: center;
+                                                fill: var(--colors-invertedContrast);
+                                                color: var(--colors-invertedContrast);
+                                                flex-shrink: 0;
+                                                margin-left: 4px;
+                                                transition: fill 0.2s ease 0s, opacity 0.2s ease 0s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .card-right-container {
+                        display: flex;
+                        flex: 1;
+                        max-width: 50%;
+                        
+                        .card-right-shadow {
+                            transform: rotate(1.43deg);
+                            height: fit-content;
+                            padding: 1px 1px 4px;
+                            box-sizing: border-box;
+                            background: rgb(60, 23, 134);
+                            border-radius: var(--radii-card);
+                            color: var(--colors-text);
+                            overflow: hidden;
+                            position: relative;
+                            
+                            .card-right {
+                                width: 100%;
+                                height: 100%;
+                                overflow: initial;
+                                background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+                                border-radius: var(--radii-card);
+                                padding: 24px;
+                                .svg-card-right {
+                                    transform: rotate(1.43deg);
+                                    position: absolute;
+                                    top: 24px;
+                                    right: 24px;
+                                    svg {
+                                        align-self: center;
+                                        fill: var(--colors-white);
+                                        color: var(--colors-white);
+                                        flex-shrink: 0;
+                                    }
+                                }
+                                .card-right-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-top: 48px;
+                                    div:nth-child(1){
+                                        color: var(--colors-white);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        font-size: 16px;
+                                    }
+                                    div:nth-child(2){
+                                        text-decoration: none;
+                                        color: var(--colors-text);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        font-size: 40px;
+                                        background: -webkit-linear-gradient(top, rgb(255, 216, 0), rgb(235, 140, 0));
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                        -webkit-text-stroke: 1px var(--colors-text);
+                                    }
+                                    div:nth-child(3) {
+                                        color: var(--colors-white);
+                                        font-weight: 600;
+                                        line-height: 1.5;
+                                        margin-bottom: 24px;
+                                        font-size: 16px;
+                                    }
+                                    div:nth-child(4) {
+                                        text-align: start;
+                                        width: 100%;
+                                        color: var(--colors-white);
+                                        font-weight: 400;
+                                        line-height: 1.5;
+                                        margin-bottom: 40px;
+                                        font-size: 16px;
+                                    }
+                                }
+                                .card-right-button {
+                                    display: flex;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    -webkit-box-pack: center;
+                                    justify-content: center;
+                                    margin: 0;
+                                    a {
+                                        width: 100%;
+                                        color: inherit;
+                                        text-decoration: none;
+                                        button {
+                                            position: relative;
+                                            -webkit-box-align: center;
+                                            align-items: center;
+                                            border: 0px;
+                                            border-radius: 16px;
+                                            box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                                            cursor: pointer;
+                                            display: inline-flex;
+                                            font-family: inherit;
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            -webkit-box-pack: center;
+                                            justify-content: center;
+                                            letter-spacing: 0.03em;
+                                            line-height: 1;
+                                            opacity: 1;
+                                            outline: 0px;
+                                            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                            height: 48px;
+                                            padding: 0px 24px;
+                                            background-color: var(--colors-primary);
+                                            color: var(--colors-invertedContrast);
+                                            width: 100%;
+                                            &:hover{
+                                                background-color: #328eca;
+                                                div {
+                                                    color: #c4b3e6;
+                                                }
+                                                svg {
+                                                    fill: #c4b3e6;
+                                                }
+                                            }
+                                            div {
+                                                color: var(--colors-invertedContrast);
+                                                font-weight: 600;
+                                                line-height: 1.5;
+                                                font-size: 16px;
+                                                transition: color 0.2s ease 0s, opacity 0.2s ease 0s;
+                                            }
+                                            svg {
+                                                align-self: center;
+                                                fill: var(--colors-invertedContrast);
+                                                color: var(--colors-invertedContrast);
+                                                flex-shrink: 0;
+                                                margin-left: 4px;
+                                                transition: fill 0.2s ease 0s, opacity 0.2s ease 0s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//---------------------- MEDIA QUERIES ----------------------//
+@media screen and (max-width: 852px) {
+    #part-6 {
+        .main-part-6 {
+            .background-images-part-6 {
+                .lower-corner {
+                    div {
+                        position: absolute;
+                        left: 0px;
+                        bottom: -64px;
+                        max-width: 192px;
+                        max-height: 192px;
+                    }
+                }
+                .upper-corner {
+                    div {
+                        max-width: 192px;
+                        max-height: 192px;
+                    }
+                }
+                .part-6-banner {
+                    padding: 16px;
+                    h2 {
+                        font-size: 32px;
+                        font-weight: 600;
+                        line-height: 1.1;
+                    }
+                    div:nth-child(4) {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        .card-left-container {
+                            max-width: 275px;
+                            margin-bottom: 32px;
+                            margin-right: 0;
+                            .card-left-shadow {
+                                transform: rotate(0deg);
+                                .card-left {
+                                    .svg-card-left {
+                                        transform: rotate(0deg);
+                                    }
+                                }
+                            }
+                        }
+                        .card-right-container {
+                            max-width: 275px;
+                            padding: 0;
+                            .card-right-shadow {
+                                transform: rotate(0deg);
+                                .card-right {
+                                    .svg-card-right {
+                                        svg {
+                                        transform: rotate(0deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Pools</title>
+</head>
+<body>
+    <div class="pools">
+        <!-- Navbar -->
+        <header class="nav" >
+            <nav>
+                <div class="nav1">
+                    <div class="nav-logo">
+                      <a href="/main.html">
+                        <img class="logo" src="./public/svgexport-3.svg" alt="" style="width: 160px;"/>
+                        <img class="logo-mobile" src="./public/svgexport-2.svg" alt=""/>
+                      </a>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="nav-trade">
+                            <div class="link"><a href="#">Trade</a></div>
+                            <div class="down-menu">
+                                <div><a href="#">Swap</a></div>
+                                <div><a href="#">Limit</a></div>
+                                <div><a href="#">Liquidity</a></div>
+                                <div><a href="#">Perpetual</a></div>
+                                <div><a href="#">Bridge</a></div>
+                                <div><a href="#">Limit (V2)</a></div>
+                            </div>
+                        </div>
+                        <div class="nav-earn">
+                          <div class="link"><a href="#">Earn</a></div>
+                          <div class="down-menu">
+                            <div><a href="#">Farms</a></div>
+                            <div><a href="#">Pools</a></div>
+                          </div>
+                        </div>
+                        <div class="nav-win">
+                          <div id="winLink" class="link"><a href="#">Win</a></div>
+                          <div class="down-menu">
+                            <div class="tradingRewardLink"><a href="./trading-reward.html">Trading Reward
+                                <div>
+                                    LIVE
+                                </div>
+                            </a></div>
+                            <div><a href="#">Trading Competition</a></div>
+                            <div><a href="#">Prediction (BETA)</a></div>
+                            <div><a href="#">Lottery</a></div>
+                            <div><a href="#">Pottery (BETA)</a></div>
+                          </div>
+                        </div>
+                        <div class="nav-nft">
+                          <div class="link"><a href="#">NFT</a></div>
+                          <div class="down-menu">
+                            <div><a href="#">Overview</a></div>
+                            <div><a href="#">Collections</a></div>
+                            <div><a href="#">Activity</a></div>
+                          </div>
+                        </div>
+                        <div class="nav-extra">
+                            <div class="link">
+                              <a href="#">
+                                <img src="./public/svgexport-5.svg" alt="" />
+                              </a>
+                            </div>
+                            <div class="down-menu">
+                                <div><a href="#">Info</a></div>
+                                <div><a href="#">IFO</a></div>
+                                <div><a href="#">Affiliate Program</a></div>
+                                <div><a href="#">Voting</a></div>
+                                <div><a href="#">Leaderboard</a></div>
+                                <div><a href="#">Blog</a></div>
+                                <div><a href="#">Docs</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav2">
+                    <div class="nav-currentprice">
+                      <a href="#">
+                        <img src="./public/svgexport-6.svg" alt="" style="width: 24px;"/>
+                        <div class="text-currency">$3.657</div>
+                      </a>
+                    </div>
+                    <div class="nav-language">
+                        <div class="nav-lang">
+                            <button class="lang-select-btn">
+                                <img src="./public/svgexport-7.svg" alt="" style="width: 24px;"/>
+                            </button>
+                            <div class="lang-down-menu">
+                                <button class="lang-item">English</button>
+                                <button class="lang-item">Deutsch</button>
+                                <button class="lang-item">Espanol</button>
+                                <button class="lang-item">Français</button>
+                                <button class="lang-item">Polski</button>
+                                <button class="lang-item">Türkçe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-settings">
+                        <button>
+                            <img src="./public/svgexport-8.svg" alt="" style="width: 24px;"/>
+                        </button>
+                    </div>
+                    <div class="nav-network">
+                        <div class="network-select-link">
+                            <div class="link-img">
+                            <img src="./public/bnb.png" alt="" />
+                            </div>
+                            <div class="link-text">
+                            <div class="link-text-desktop">BNB Smart Chain</div>
+                            <div class="link-text-mobile" style="display: none;">BNB</div>
+                            </div>
+                            <img src="./public/svgexport-9.svg" alt="" />
+                        </div>
+                        <div class="network-select-content">
+                            <div class="network-select-text">
+                                <div class="select-network-txt">Select a Network</div>
+                            </div>
+                            <hr />
+                            <button class="active">
+                                <img src="./public/bnb.png" alt="" />
+                                <div class="btn-text">BNB Smart Chain</div>
+                            </button>
+                            <button>
+                                <img src="./public/eth.png" alt="" />
+                                <div class="btn-text">Etherium</div>
+                            </button>
+                            <button>
+                                <img src="./public/apt.png" alt="" />
+                                <div class="btn-text">Aptos</div>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="nav-connect">
+                        <div class="connect-btn">Connect Wallet</div>
+                        <div class="connect-btn-mobile">Connect</div>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!-- End of navbar-->    
+        <div class="earn-nav">
+            <div class="enav-wrap">
+                <div class="enav-svg1">
+                    <svg viewBox="0 0 24 24" color="text" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-231a1e38-0 dPwWVs"><path d="M14.71 15.88L10.83 12L14.71 8.12001C15.1 7.73001 15.1 7.10001 14.71 6.71001C14.32 6.32001 13.69 6.32001 13.3 6.71001L8.70998 11.3C8.31998 11.69 8.31998 12.32 8.70998 12.71L13.3 17.3C13.69 17.69 14.32 17.69 14.71 17.3C15.09 16.91 15.1 16.27 14.71 15.88Z"></path></svg>
+                </div>
+                <div class="enav-svg2">
+                    <svg viewBox="0 0 24 24" color="text" width="20px" xmlns="http://www.w3.org/2000/svg" class="sc-231a1e38-0 dPwWVs"><path d="M9.29006 15.88L13.1701 12L9.29006 8.12001C8.90006 7.73001 8.90006 7.10001 9.29006 6.71001C9.68006 6.32001 10.3101 6.32001 10.7001 6.71001L15.2901 11.3C15.6801 11.69 15.6801 12.32 15.2901 12.71L10.7001 17.3C10.3101 17.69 9.68006 17.69 9.29006 17.3C8.91006 16.91 8.90006 16.27 9.29006 15.88Z"></path></svg>
+                </div>
+                <div class="enav-elements">
+                    <div class="enav-element">
+                        <div class="enav-element-btn">
+                            <a href="#">Farms</a>
+                        </div>
+                    </div>
+                    <div class="enav-element">
+                        <div class="enav-element-btn">
+                            <a href="#">Pools</a>
+                            <div class="slcted"></div>
+                        </div>
+                    </div>
+                    <div class="enav-element">
+                        <div class="enav-element-btn">
+                            <a href="#">Liquid Staking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mwrap">
+                <div class="banner">
+                    <div class="bwrap1">
+                        <div class="bwrap">
+                            <div class="bsections">
+                                <h1 scale="xxl"
+                                    color="secondary"
+                                    >Syrup Pools</h1>
+                                <h2 scale="xxl"
+                                    color="text"
+                                    font-size="16px"
+                                >Just stake some tokens to earn.</h2>
+                                <h2 scale="xxl"
+                                    color="text"
+                                    font-size="16px"
+                                >High APR, low risk.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="controlboard">
+                    <div class="cbuttons">
+                        <div class="viewstyle-buttons">
+                            <button>
+                                <img src="public/boxview.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="public/listview.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="list-switch-w">
+                            <div class="list-switch">
+                                <a scale="sm" href="" id="selected-a">
+                                    Live
+                                </a>
+                                <span>
+                                    <a href="/history.html" id="unselected-a">
+                                        Finished
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="isstaked">
+                            <div class="stake-checkbox">
+                                <input type="checkbox" scale="sm" name="stake" id="stake-checkbox">
+                                <div class="sliderr round"></div>
+                            </div>
+                            <div class="staked-text" color="text" font-size="16px">Staked only</div>
+                        </div>
+                    </div>
+                    <div class="csort">
+                        <div class="sort-search">
+                            <div class="sort-wrap">
+                                <div class="sort-text">
+                                    Sort by
+                                </div>
+                                <div class="sort">
+                                    <div class="sselected">
+                                        <div class="sbox">
+                                            <div class="stext">
+                                                Hot
+                                            </div>
+                                            <img src="/public/down-arrow-filled.svg" alt="down-arrow">
+                                            <div class="sdropdown-menu">
+                                                <ul>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">APR</div>
+                                                    </li>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">Earned</div>
+                                                    </li>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">Total Staked</div>
+                                                    </li>
+                                                    <li>
+                                                        <div color="text" font-size="16px" class="s-dropdown-item">Latest</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-wrap">
+                                <div class="search-text">Search</div>
+                                <div class="searchbox">
+                                    <input type="text" placeholder="Search Pools" scale="md" value="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poolboard">
+                    <div class="poolcontent">
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="/public/svgexport-6.svg" class="coinImg" alt="" />
+                                <img src="public/green-reflesh.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Stake CAKE</div>
+                                <div class="headerDesc">Stake, Earn – And more!</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">CAKE Staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Flexible APY</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.85%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">Locked APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">Up to 18.22%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">229,069,913 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0xBdEAe1cA48894A1759A8374D63925f21f2Ee2639.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn EDU</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">EDU Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">5,372,633 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">8.92%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">30 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0x91d6d6aF7635B7b23A8CED9508117965180e2362.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn USH</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">USH Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">4,093,360 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">9.71%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">26 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0x4C882ec256823eE773B25b414d36F92ef58a7c0C.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn PSTAKE</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">PSAKE Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">1,569,188 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">10.48%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">25 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column1">
+                              <div class="imgContainer">
+                                <img src="https://tokens.pancakeswap.finance/images/0x2dfF88A56767223A5529eA5960Da7A3F5f766406.png" class="coinImg" alt="" />
+                                <img src="/public/svgexport-6.svg" class="cycle" alt="" />
+                              </div>
+                              <div class="desc">
+                                <div class="header">Earn PSTAKE</div>
+                                <div class="headerDesc">Stake CAKE</div>
+                              </div>
+                            </div>
+                            <div class="column3">
+                              <div class="desc">
+                                <div class="header">PSAKE Earned</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">0.0</div>
+                                  <div class="subDesc">0 USD</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column4">
+                              <div class="desc">
+                                <div class="header">Total staked</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">2,669,581 CAKE</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column5">
+                              <div class="desc">
+                                <div class="header">APR</div>
+                                <div class="headerDesc">
+                                  <div class="subMainDesc">9.09%</div>
+                                  <img src="public/calculator.svg" class="descImg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column6">
+                              <div class="desc">
+                                <div class="header">Ends in</div>
+                                <div class="headerDesc">
+                                  <div class="header" style="font-size: 14px;">24 days</div>
+                                  <img src="public/timer-blue.svg" class="descImg" alt="" width="20px" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="column7">
+                              <div class="desc">
+                                <div class="header">Details</div>
+                                <div class="headerDesc">
+                                  <img src="public/down-arrow-blue.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plogo">
+                    <img src="public/3d-syrup-bunnies.png" alt="illustration">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <!-- Part 9-->
+            <div id="links-footer">
+                <div class="about">
+                    <h4>About</h4>
+                    <a href="#"><strong class="yellow">Contact</strong></a>
+                    <a href="#">Brand</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Community</a>
+                    <a href="#">Litepaper</a>
+                </div>
+                <div class="help">
+                    <h4>Help</h4>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Troubleshooting</a>
+                    <a href="#">Guides</a>
+                </div>
+                <div class="developers">
+                    <h4>Developers</h4>
+                    <a href="#">Github</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Bug Bounty</a>
+                    <a href="#">Audits</a>
+                    <a href="#">Careers</a>
+                </div>
+                <img class="desktop" src="./public/svgexport-36.svg" width="160px" alt="Pancake Swap Logo">
+            </div>
+            <img class="mobile" src="./public/svgexport-36.svg" width="160px" alt="Pancake Swap Logo">
+            <!-- Part 10-->
+            
+            <div class="icons-footer">
+                <a href="#"><img src="./public/svgexport-38.svg" alt="Twitter"></a>
+                <div class="telegram"><a href="#"><img src="./public/svgexport-39.svg" alt="Telegram"></a>
+                    <div class="tele-lang">
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswap">English</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeSwap_DE">Deutsch</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeswapEs">Español</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswapfr">Français</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/PancakeSwapPortuguese">Português</a></button>
+                        <button class="lang-item"><a target="_blank" href="https://t.me/pancakeswapturkiye">Türkçe</a></button>
+                    </div>
+                </div>
+                <a href="#"><img src="./public/svgexport-40.svg" alt="Reddit"></a>
+                <a href="#"><img src="./public/svgexport-41.svg" alt="Instagram"></a>
+                <a href="#"><img src="./public/svgexport-42.svg" alt="Github"></a>
+                <a href="#"><img src="./public/svgexport-43.svg" alt="Discord"></a>
+                <a href="#"><img src="./public/svgexport-44.svg" alt="Youtube"></a>        
+            </div>
+
+            <div class="buttons-footer">
+
+                <div class="buttons-footer-left">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+
+                    <div class="lang-select">
+                        <button class="lang-select-btn">
+                            <img src="./public/svgexport-7.svg" alt="">
+                            <div>EN</div>
+                        </button>
+                        <div class="lang-select-content">
+                            <button class="lang-item">English</button>
+                            <button class="lang-item">Deutsch</button>
+                            <button class="lang-item">Espanol</button>
+                            <button class="lang-item">Français</button>
+                            <button class="lang-item">Português</button>
+                            <button class="lang-item">Türkçe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-footer-right">
+                    <div class="currency-price">
+                        <a href="#">
+                            <img src="./public/svgexport-6.svg" alt="" style="width: 24px;">
+                            <div class="text-currency">$3.657</div>
+                        </a>
+                    </div>
+                    <a href="#" class="buy-btn">Buy CAKE <img src="./public/svgexport-10.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="go-top-container">
+        <button class="go-top">
+            <a href="#"><img src="./public/svgexport-57.svg" alt="arrow-up"></a>
+        </button>
+    </div>
+
+    <div class="mobile-nav-wrap">
+        <div class="mobile-nav">
+            <div class="mbnav-el">
+                <div class="mbnav-btn">
+                    <div class="mbnav-btn">
+                        <span>
+                            <a href="" style="opacity: 1;">
+                                <div class="mnav-btn-cntnt" height="100%">
+                                    <div class="mnbc-svg"><img src="./public/svgexport-49.svg" alt="" /></div>
+                                    <div class="mnbc-txt">Trade</div>
+                                </div>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                    <div class="mnli-el">
+                        <a href="#">
+                            Swap
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Liquidity
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Perpetual
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Bridge
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Limit (V2)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mbnav-el">
+                <div class="mbnav-btn">
+                    <div class="mbnav-btn">
+                        <span>
+                            <a href="" style="opacity: 1;">
+                                <div class="mnav-btn-cntnt">
+                                    <div class="mnbc-svg"><img src="./public/svgexport-51.svg" alt="" /></div>
+                                    <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px">Earn</div>
+                                </div>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                    <div class="mnli-el">
+                        <a href="#">
+                            Farms
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Pools
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mbnav-el">
+                <div class="mbnav-btn">
+                    <div class="mbnav-btn">
+                        <span>
+                            <a href="" style="opacity: 1;">
+                                <div class="mnav-btn-cntnt">
+                                    <div class="mnbc-svg"><img src="./public/svgexport-53.svg" alt="" style="width: 20px; height: 18px; margin-top: 3px;"/></div>
+                                    <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px">Win</div>
+                                </div>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                    <div class="mnli-el">
+                        <a href="#">
+                            Trading Competition
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Prediction (BETA)
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Lottery
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Pottery (BETA)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mbnav-el">
+                <div class="mbnav-btn">
+                    <div class="mbnav-btn">
+                        <span>
+                            <a href="" style="opacity: 1;">
+                                <div class="mnav-btn-cntnt">
+                                    <div class="mnbc-svg"><img src="./public/svgexport-55.svg" alt=""/></div>
+                                    <div class="mnbc-txt" color="textSubtle" font-weight="400" font-size="10px" style="margin-left: 4px;">NFT</div>
+                                </div>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="mbnav-list" style="position: absolute; inset: auto auto 0px 0px; transform: translate(0px, -50px);">
+                    <div class="mnli-el">
+                        <a href="#">
+                            Overview
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Collections
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Activity
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mbnav-el">
+                <div class="mbnav-btn">
+                    <div class="mbnav-btn">
+                        <span>
+                            <a href="" style="opacity: 1; margin-top: 4px;">
+                                <div class="mnav-btn-cntnt" height="100%">
+                                    <div class="mnbc-svg" height="22px" width="21px"><img src="./public/svgexport-5.svg" alt="" style="margin-top: 5px;"/></div>
+                                </div>
+                            </a>
+                            <span class="mbnav-success"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="mbnav-list">
+                    <div class="mnli-el">
+                        <a href="#">
+                            Info
+                            <div class="mnli-el-new">New</div>
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            IFO
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Affiliate Program
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Voting
+                            <div class="mnli-el-new">Vote Now</div>
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Leaderboard
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Blog
+                        </a>
+                    </div>
+                    <div class="mnli-el">
+                        <a href="#">
+                            Docs
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

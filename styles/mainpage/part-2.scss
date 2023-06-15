@@ -1,0 +1,124 @@
+
+#part-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    background: linear-gradient(180deg,#fff 22%,#d7caec 100%);
+}
+
+#part-2 > img {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+#part-2 h2, #part-2 h3 {
+    color: var(--colors-text);
+}
+
+#part-2.dark h2, #part-2.dark h3 {
+    color: #f4eeff;
+}
+
+#part-2 h2 {
+    font-size: 2.5rem;
+    margin: -0.4rem;
+}
+
+#part-2 > p:first-of-type {
+    margin-top: 2rem;
+}
+
+#part-2 > p {
+    text-align: center;
+}
+
+#part-2 p {    
+    color: var(--colors-textSubtle);
+}
+
+#part-2 > p:last-of-type {
+    margin: 1rem 0;
+}
+
+.cards-flex {
+    padding: 0 1rem;
+    margin: 1.5rem auto 4rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.cards-flex > div {
+    border-radius: 24px;
+    padding: 1px 1px 4px;
+    background-color: var(--colors-cardBorder);
+}
+
+.cards-flex figure {
+    background-color: var(--colors-backgroundAlt);
+    padding: 2rem;
+    border-radius: 24px;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards-flex figure > img {
+    align-self: flex-end;
+}
+
+.cards-flex figcaption > h3 {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+}
+
+.cards-flex figcaption strong, .cards-flex figcaption h3 {
+    display: block;
+}
+
+#part-2 strong.purple {
+    color: #9a6aff;
+}
+
+#part-2 strong.green {
+    color: #1fc7d4;
+}
+
+#part-2 strong.pink {
+    color: #ed4b9e;
+}
+
+    /*  DARK MODE part 2 */
+
+    #part-2.dark {
+        background-image: linear-gradient(180deg,#09070c 22%,#201335 100%);
+    }
+
+    #part-2.dark p {
+        color:#b8add2;
+    }
+
+    #part-2.dark .cards-flex > div {
+        background-color: #383241;
+    }
+
+                /* to do -> Andrea */
+    /* I HAVE TO PUT THE CUSTOM PROPERTIES OF THE COLORS STILL.*/
+
+@media screen and (max-width: 920px) {
+    .cards-flex {
+        flex-direction: column;
+    }
+
+    .cards-flex figcaption > h3 {
+        margin-top: 1rem;
+    }
+}
+
+#part-2 + .divisor {
+    background-color: var(--colors-background);
+}
